@@ -1,0 +1,15 @@
+## large data files
+bigdata/*
+
+## temp results
+tmpresults/*
+*.tmp
+
+## system files or cache files
+.DS*
+.ipynb*
+*ingore*/
+
+
+
+

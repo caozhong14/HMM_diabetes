@@ -1,0 +1,1595 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable,
+.markdown-body .highlighttable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr,
+.markdown-body .highlighttable {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite,
+.markdown-body .highlighttable pre,
+.markdown-body .highlighttable div.highlight {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td,
+.markdown-body .highlighttable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headerlink {
+  font: normal 400 16px fontawesome-mini;
+  vertical-align: middle;
+  margin-left: -16px;
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  color: #333;
+}
+
+.markdown-body .headerlink:focus {
+  outline: none;
+}
+
+.markdown-body h1 .headerlink {
+  margin-top: 0.8rem;
+}
+
+.markdown-body h2 .headerlink,
+.markdown-body h3 .headerlink {
+  margin-top: 0.6rem;
+}
+
+.markdown-body h4 .headerlink {
+  margin-top: 0.2rem;
+}
+
+.markdown-body h5 .headerlink,
+.markdown-body h6 .headerlink {
+  margin-top: 0;
+}
+
+.markdown-body .headerlink:hover,
+.markdown-body h1:hover .headerlink,
+.markdown-body h2:hover .headerlink,
+.markdown-body h3:hover .headerlink,
+.markdown-body h4:hover .headerlink,
+.markdown-body h5:hover .headerlink,
+.markdown-body h6:hover .headerlink {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite,
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* MultiMarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px fontawesome-mini;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\e157';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><style>/*GitHub*/
+.highlight {background-color:#fff;color:#333333;}
+.highlight .hll {background-color:#ffffcc;}
+.highlight .c{color:#999988;font-style:italic}
+.highlight .err{color:#a61717;background-color:#e3d2d2}
+.highlight .k{font-weight:bold}
+.highlight .o{font-weight:bold}
+.highlight .cm{color:#999988;font-style:italic}
+.highlight .cp{color:#999999;font-weight:bold}
+.highlight .c1{color:#999988;font-style:italic}
+.highlight .cs{color:#999999;font-weight:bold;font-style:italic}
+.highlight .gd{color:#000000;background-color:#ffdddd}
+.highlight .ge{font-style:italic}
+.highlight .gr{color:#aa0000}
+.highlight .gh{color:#999999}
+.highlight .gi{color:#000000;background-color:#ddffdd}
+.highlight .go{color:#888888}
+.highlight .gp{color:#555555}
+.highlight .gs{font-weight:bold}
+.highlight .gu{color:#800080;font-weight:bold}
+.highlight .gt{color:#aa0000}
+.highlight .kc{font-weight:bold}
+.highlight .kd{font-weight:bold}
+.highlight .kn{font-weight:bold}
+.highlight .kp{font-weight:bold}
+.highlight .kr{font-weight:bold}
+.highlight .kt{color:#445588;font-weight:bold}
+.highlight .m{color:#009999}
+.highlight .s{color:#dd1144}
+.highlight .n{color:#333333}
+.highlight .na{color:teal}
+.highlight .nb{color:#0086b3}
+.highlight .nc{color:#445588;font-weight:bold}
+.highlight .no{color:teal}
+.highlight .ni{color:purple}
+.highlight .ne{color:#990000;font-weight:bold}
+.highlight .nf{color:#990000;font-weight:bold}
+.highlight .nn{color:#555555}
+.highlight .nt{color:navy}
+.highlight .nv{color:teal}
+.highlight .ow{font-weight:bold}
+.highlight .w{color:#bbbbbb}
+.highlight .mf{color:#009999}
+.highlight .mh{color:#009999}
+.highlight .mi{color:#009999}
+.highlight .mo{color:#009999}
+.highlight .sb{color:#dd1144}
+.highlight .sc{color:#dd1144}
+.highlight .sd{color:#dd1144}
+.highlight .s2{color:#dd1144}
+.highlight .se{color:#dd1144}
+.highlight .sh{color:#dd1144}
+.highlight .si{color:#dd1144}
+.highlight .sx{color:#dd1144}
+.highlight .sr{color:#009926}
+.highlight .s1{color:#dd1144}
+.highlight .ss{color:#990073}
+.highlight .bp{color:#999999}
+.highlight .vc{color:teal}
+.highlight .vg{color:teal}
+.highlight .vi{color:teal}
+.highlight .il{color:#009999}
+.highlight .gc{color:#999;background-color:#EAF2F5}
+</style><title>Readme</title></head><body><article class="markdown-body"><h1 id="data-preparation-for-diseases">Data Preparation For diseases<a class="headerlink" href="#data-preparation-for-diseases" title="Permanent link"></a></h1>
+<p>Workspace：</p>
+<div class="highlight"><pre>local for download data, processing small data **puppy**:../HMM_diabetes/dataPreparation
+Computing Platform MacBook Air (M1, 2020)
+Updated to 26 April 2022.
+</pre></div>
+
+<h2 id="country-name-cross-data">Country Name Cross-Data<a class="headerlink" href="#country-name-cross-data" title="Permanent link"></a></h2>
+<p>INPUT: Artificial Download</p>
+<p>OUTPUT: dl1_countrycodeorg_country_name.csv</p>
+<p>Details:</p>
+<ol>
+<li>Get country code from <a href="https://countrycode.org/">https://countrycode.org/</a></li>
+<li>Get WBCountry from <a href="https://data.worldbank.org/country">https://data.worldbank.org/country</a></li>
+<li>Get WBCountry Code、Region、Income group from <a href="http://databank.worldbank.org/data/download/site-content/CLASS.xlsx">http://databank.worldbank.org/data/download/site-content/CLASS.xlsx</a></li>
+<li>Get country name from <a href="http://ghdx.healthdata.org/gbd-results-tool">http://ghdx.healthdata.org/gbd-results-tool</a></li>
+</ol>
+<p>Artificial processing to make sure 1 Country Code 2 WBCountry 3 country are matching.</p>
+<ol>
+<li>Channel Islands has no corresponding country code (GB, the same as the United Kingdom), so we take the code in CHI from CLASS.xlsx of the world bank.</li>
+</ol>
+<p><a href="https://www.notion.so/af016a5fc9414826ad6dd7a209c6d2b0">Country Name Summary</a></p>
+<h2 id="education">Education<a class="headerlink" href="#education" title="Permanent link"></a></h2>
+<p>Data source Barro Lee education database (from 1990-2040):</p>
+<p><a href="http://www.barrolee.com/">http://www.barrolee.com</a></p>
+<div class="highlight"><pre><span class="c1">## 输入与输出</span>
+
+<span class="c1">## INPUT FILE</span>
+<span class="n">df_input_female</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&#39;BL2013_F_v2.2.csv&#39;</span><span class="p">)</span>
+<span class="n">df_input_male</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&#39;BL2013_M_v2.2.csv&#39;</span><span class="p">)</span>
+<span class="n">df_project_female</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&#39;OUP_proj_F1564_v1.csv&#39;</span><span class="p">)</span>
+<span class="n">df_project_male</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&#39;OUP_proj_M1564_v1.csv&#39;</span><span class="p">)</span>
+
+<span class="n">country_names</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">&#39;../dl1_countrycodeorg_country_name.csv&#39;</span><span class="p">)</span>
+<span class="n">codemap</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">country_names</span><span class="p">[</span><span class="s">&#39;Country Code&#39;</span><span class="p">],</span> <span class="n">country_names</span><span class="o">.</span><span class="n">country</span><span class="p">))</span>
+<span class="n">WBcodes</span> <span class="o">=</span> <span class="n">df_input_female</span><span class="p">[</span><span class="s">&#39;WBcode&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="c1"># 146</span>
+
+<span class="c1">## OUTPUT FILE</span>
+<span class="n">save_file_name</span> <span class="o">=</span> <span class="s">&quot;education.csv&quot;</span>
+<span class="n">save_filled_file_name</span> <span class="o">=</span> <span class="s">&quot;education_filled.csv&quot;</span>
+<span class="n">save_check_name</span> <span class="o">=</span> <span class="s">&#39;check_country_name.csv&#39;</span>
+</pre></div>
+
+<p>Details:</p>
+<p>First, Prepare input files. </p>
+<p>Download these education data to PATH=&rdquo;./education&rdquo;</p>
+<div class="highlight"><pre><span class="c1"># Download 1950-2010 BarroLeeDataset</span>
+<span class="c1"># wget https://barrolee.github.io/BarroLeeDataSet/BLData/BL2013_MF_v2.2.csv</span>
+wget https://barrolee.github.io/BarroLeeDataSet/BLData/BL2013_F_v2.2.csv
+wget https://barrolee.github.io/BarroLeeDataSet/BLData/BL2013_M_v2.2.csv
+
+<span class="c1"># Download 2015-2040 Pojections</span>
+<span class="c1"># wget https://barrolee.github.io/BarroLeeDataSet/OUP/OUP_proj_MF1564_v1.csv</span>
+wget https://barrolee.github.io/BarroLeeDataSet/OUP/OUP_proj_F1564_v1.csv
+wget https://barrolee.github.io/BarroLeeDataSet/OUP/OUP_proj_M1564_v1.csv
+</pre></div>
+
+<p>Then, run all codes in &ldquo;./education/process.ipynb&rdquo;</p>
+<p>Finally, output 146 countries education data:  &ldquo;./education/education.csv&rdquo;</p>
+<p>output 216 countries education data:&rdquo;./education/education_filled.csv&rdquo;</p>
+<div class="highlight"><pre>216 countries = 216 WB countries 
++ TWN(Taiwan, China, has economic data, East Asia &amp; Pacific, High income) 
++ REU(Reunion, has primary education data) 
+- PRK(North Korea, the only country as East Asia &amp; Pacific Low income) 
+- SYC(Seychelles, the only country as Sub-Saharan Africa High income) 
+
+204 GBD 
+- {&#39;PRK&#39;, &#39;SYC&#39;, &#39;PSE&#39;, &#39;NIU&#39;, &#39;COK&#39;, &#39;TKL&#39;} 6
++ {&#39;CUW&#39;, &#39;GIB&#39;, &#39;REU&#39;, &#39;CYM&#39;, &#39;PYF&#39;, &#39;ABW&#39;, &#39;MAF&#39;, &#39;SXM&#39;, &#39;IMN&#39;, &#39;XKX&#39;, &#39;MAC&#39;, &#39;VGB&#39;, &#39;TCA&#39;, &#39;CHI&#39;, &#39;FRO&#39;, &#39;HKG&#39;, &#39;LIE&#39;, &#39;NCL&#39;} 18
+</pre></div>
+
+<p>Total Run time: 10s.</p>
+<h2 id="labour-and-population">Labour and population<a class="headerlink" href="#labour-and-population" title="Permanent link"></a></h2>
+<h3 id="labour-data">Labour data<a class="headerlink" href="#labour-data" title="Permanent link"></a></h3>
+<p>Data source ILOSTAT International Labour Organization Statistics (from 2010-2030)</p>
+<p><a href="https://ilostat.ilo.org/data/">https://ilostat.ilo.org/data/</a></p>
+<p>Details:</p>
+<p>First, Prepare input files. </p>
+<p>Download these labor data to PATH=&rdquo;./population_labor&rdquo;</p>
+<div class="highlight"><pre><span class="c1"># Population by sex and age - - UN estimates and projections, Nov. 2020 (thousands) - Annual }</span>
+https://www.ilo.org/shinyapps/bulkexplorer25/?lang<span class="o">=</span>en<span class="p">&amp;</span><span class="nv">segment</span><span class="o">=</span>indicator<span class="p">&amp;</span><span class="nv">id</span><span class="o">=</span>HOW_2LSS_NOC_RT_A
+<span class="c1"># Download ILO modelled estimates labour force participation rate by sex and age (annual) </span>
+save as <span class="s2">&quot;population_p.csv&quot;</span>
+wget https://www.ilo.org/ilostat-files/WEB_bulk_download/indicator/EAP_2WAP_SEX_AGE_RT_A.csv.gz
+<span class="c1"># \text { Labour force participation rate by sex and age - - ILO modelled estimates, Nov. } 2020 \text { (\%) - Annual }</span>
+save as <span class="s2">&quot;laborparticipation_p.csv&quot;</span>
+</pre></div>
+
+<p>Then, run all codes in &ldquo;./population_labor/population.ipynb&rdquo;</p>
+<div class="highlight"><pre>## MAIN FUNCTION - input
+
+## INPUT FILE
+df_input_pop = pd.read_csv(&#39;population_p.csv&#39;, usecols=[&#39;ref_area&#39;,&#39;time&#39;,&#39;sex&#39;, &#39;classif1&#39;,&#39;obs_value&#39;])
+df_input_lab = pd.read_csv(&#39;laborparticipation_p.csv&#39;, usecols=[&#39;ref_area&#39;,&#39;time&#39;,&#39;sex&#39;, &#39;classif1&#39;,&#39;obs_value&#39;])
+
+country_names = pd.read_csv(&#39;../dl1_countrycodeorg_country_name.csv&#39;)
+codemap = dict(zip(country_names[&#39;Country Code&#39;], country_names.country))
+
+ref_area_pop = df_input_pop[&#39;ref_area&#39;].unique() #
+ref_area_lab = df_input_lab[&#39;ref_area&#39;].unique() #
+
+## OUTPUT FILE
+pop_save_file_name = &quot;population.csv&quot; #only to year 2025
+lab_save_file_name = &quot;laborparticipation.csv&quot;
+lab_final_file_name = &quot;laborparticipation_final.csv&quot;Subtraction from GBD : {&#39;KIR&#39;, &#39;MCO&#39;, &#39;MHL&#39;, &#39;GRL&#39;, &#39;PLW&#39;, &#39;TKL&#39;, &#39;GRD&#39;, &#39;FSM&#39;, &#39;ATG&#39;, &#39;AND&#39;, &#39;SMR&#39;, &#39;SYC&#39;, &#39;DMA&#39;, &#39;TUV&#39;, &#39;ASM&#39;, &#39;KNA&#39;, &#39;BMU&#39;, &#39;MNP&#39;, &#39;NIU&#39;, &#39;NRU&#39;, &#39;COK&#39;} 21
+</pre></div>
+
+<div class="highlight"><pre>Subtraction from WB: {&#39;KIR&#39;, &#39;MAF&#39;, &#39;LIE&#39;, &#39;MCO&#39;, &#39;IMN&#39;, 
+&#39;MHL&#39;, &#39;PLW&#39;, &#39;GRL&#39;, &#39;XKX&#39;, &#39;ABW&#39;, 
+&#39;GRD&#39;, &#39;VGB&#39;, &#39;FRO&#39;, &#39;FSM&#39;, &#39;ATG&#39;, 
+&#39;SXM&#39;, &#39;CUW&#39;, &#39;TCA&#39;, &#39;SMR&#39;, &#39;AND&#39;, 
+&#39;SYC&#39;, &#39;DMA&#39;, &#39;CHI&#39;, &#39;CYM&#39;, &#39;TUV&#39;, 
+&#39;ASM&#39;, &#39;KNA&#39;, &#39;BMU&#39;, &#39;MNP&#39;, &#39;GIB&#39;, &#39;NRU&#39;} 31
+
+Subtraction from GBD : {&#39;KIR&#39;, &#39;MCO&#39;, &#39;MHL&#39;, &#39;GRL&#39;, &#39;PLW&#39;, 
+&#39;TKL&#39;, &#39;GRD&#39;, &#39;FSM&#39;, &#39;ATG&#39;, &#39;AND&#39;, 
+&#39;SMR&#39;, &#39;SYC&#39;, &#39;DMA&#39;, &#39;TUV&#39;, &#39;ASM&#39;, 
+&#39;KNA&#39;, &#39;BMU&#39;, &#39;MNP&#39;, &#39;NIU&#39;, &#39;NRU&#39;, &#39;COK&#39;} 21
+</pre></div>
+
+<p>Total Run time: 7s.</p>
+<h3 id="population-data">Population Data<a class="headerlink" href="#population-data" title="Permanent link"></a></h3>
+<p>Population Data Source: Department of Economic and Social Affairs Population Dynamics</p>
+<p><a href="https://population.un.org/wpp/DataQuery/">https://population.un.org/wpp/DataQuery/</a></p>
+<p>Downloads: </p>
+<ol>
+<li>Population Data. Data/interactive data/Total population by sex (thousand) / All countries/ Years from 2010-2030/Male and Female/By Years Periods, then we get PopulationAgeSex-20210920085152.xlsx, save data as &lsquo;populationagesex_input.csv&rsquo; files on our local computer.</li>
+<li>Country Names. Download/Metadata/Documentation/LOCATIONS.</li>
+</ol>
+<p>/<a href="https://population.un.org/wpp/Download/Files/4_Metadata/WPP2019_F01_LOCATIONS.XLSX">https://population.un.org/wpp/Download/Files/4_Metadata/WPP2019_F01_LOCATIONS.XLSX</a></p>
+<p>save data as &lsquo;WPP2019_F01_LOCATIONS_DB.csv&rsquo;</p>
+<p>Then RUN &lsquo;population_labor/UNDP/UNpopulation.ipynb&rsquo;</p>
+<div class="highlight"><pre>## MAIN FUNCTION - input
+
+## INPUT FILE
+# codemaps = pd.read_csv(&#39;codemaps.csv&#39;)
+country_names = pd.read_csv(&#39;../../dl1_countrycodeorg_country_name.csv&#39;)
+UNcode_names = pd.read_csv(&#39;WPP2019_F01_LOCATIONS_DB.csv&#39;)
+UNcode_names = UNcode_names[[&#39;Country Code&#39;, &#39;LocID&#39;]]
+
+df_input = pd.read_csv(&#39;populationagesex_input.csv&#39;)
+
+## OUTPUT FILE
+save_file_name = &quot;population.csv&quot;
+</pre></div>
+
+<p>Finally, output 201 countries education data:  &ldquo;./population_labor/UNDP/population.csv&rdquo;</p>
+<div class="highlight"><pre>201 countries 
+Subtraction from WB: [&#39;AND&#39;, &#39;ASM&#39;, &#39;BMU&#39;, &#39;CYM&#39;, &#39;DMA&#39;, 
+&#39;FRO&#39;, &#39;GIB&#39;, &#39;GRL&#39;, &#39;IMN&#39;, &#39;KNA&#39;, 
+&#39;LIE&#39;, &#39;MAF&#39;, &#39;MCO&#39;, &#39;MHL&#39;, &#39;MNP&#39;, 
+&#39;NRU&#39;, &#39;PLW&#39;, &#39;SMR&#39;, &#39;SXM&#39;, &#39;TCA&#39;, 
+&#39;TUV&#39;, &#39;VGB&#39;, &#39;XKX&#39;] 23
+Plus from WB: [&#39;ESH&#39;, &#39;GLP&#39;, &#39;GUF&#39;, &#39;MTQ&#39;, &#39;MYT&#39;, 
+&#39;PSE&#39;, &#39;REU&#39;, &#39;TWN&#39;] 8
+Subtraction from GBD : [&#39;AND&#39;, &#39;ASM&#39;, &#39;BMU&#39;, &#39;COK&#39;, &#39;DMA&#39;, 
+&#39;GRL&#39;, &#39;KNA&#39;, &#39;MCO&#39;, &#39;MHL&#39;, &#39;MNP&#39;, 
+&#39;NIU&#39;, &#39;NRU&#39;, &#39;PLW&#39;, &#39;SMR&#39;, &#39;TKL&#39;, &#39;TUV&#39;] 16
+Plus from GBD : [&#39;ABW&#39;, &#39;CHI&#39;, &#39;CUW&#39;, &#39;ESH&#39;, &#39;GLP&#39;, 
+&#39;GUF&#39;, &#39;HKG&#39;, &#39;MAC&#39;, &#39;MTQ&#39;, &#39;MYT&#39;, &#39;NCL&#39;, &#39;PYF&#39;, &#39;REU&#39;] 13
+</pre></div>
+
+<p>Total Run time: 3s.</p>
+<h3 id="gdp">GDP<a class="headerlink" href="#gdp" title="Permanent link"></a></h3>
+<p><strong>Data Source: The world bank</strong></p>
+<p>GDP (constant 2010 USD): from 1990-2020. save as GDP_raw.csv</p>
+<p><a href="https://api.worldbank.org/v2/en/indicator/NY.GDP.MKTP.KD?downloadformat=csv">https://api.worldbank.org/v2/en/indicator/NY.GDP.MKTP.KD?downloadformat=csv</a></p>
+<p>GDP, PPP (constant 2017 international $) save as GDP_raw_ppp.csv</p>
+<p><a href="https://api.worldbank.org/v2/en/indicator/NY.GDP.MKTP.PP.KD?downloadformat=csv">https://api.worldbank.org/v2/en/indicator/NY.GDP.MKTP.PP.KD?downloadformat=csv</a></p>
+<p><em>GDP Projection data: the growth rate from 2021-2026 save as GDP_projection.csv</em></p>
+<p><a href="https://www.imf.org/external/pubs/ft/weo/2020/01/weodata/index.aspx">https://www.imf.org/external/pubs/ft/weo/2020/01/weodata/index.aspx</a></p>
+<p>then we use the growing rate at 2026 as 2027, 2028, 2029, 2030</p>
+<p>Given the covid crisis, we will project the GDP beyond 2021 without using growth data for 2020 and 2021.</p>
+<p><strong>Code for Processing Raw Data: ./</strong>GDP/GDP_process.ipynb</p>
+<p><strong>Output:</strong> GDP.csv or GDP_ppp.csv</p>
+<h3 id="savings">Savings<a class="headerlink" href="#savings" title="Permanent link"></a></h3>
+<p><strong>Data Source: The world bank</strong>, assume savings rate going forward is the average between 2010-2016</p>
+<p>Gross Savings of GDP</p>
+<p><a href="https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS">https://data.worldbank.org/indicator/NY.GNS.ICTR.ZS</a></p>
+<p>save as <em>savings_raw.csv</em></p>
+<p>assuming that the saving from 2021 to 2050 is just the same as at 2020.</p>
+<p><strong>Code for Processing Raw Data:</strong></p>
+<p>Savings/savings_process.ipynb</p>
+<p><strong>Output:</strong></p>
+<p>savings.csv</p>
+<h3 id="health-expenditure-updated-to-sep-2021">Health expenditure, Updated to Sep, 2021<a class="headerlink" href="#health-expenditure-updated-to-sep-2021" title="Permanent link"></a></h3>
+<p><strong>Data Source: The world bank</strong>, </p>
+<p>Current health expenditure (% of GDP)</p>
+<p><a href="https://api.worldbank.org/v2/en/indicator/SH.XPD.CHEX.GD.ZS?downloadformat=csv">https://api.worldbank.org/v2/en/indicator/SH.XPD.CHEX.GD.ZS?downloadformat=csv</a></p>
+<p>Current health expenditure per capita, PPP (current international $)</p>
+<p><a href="https://api.worldbank.org/v2/en/indicator/SH.XPD.CHEX.PP.CD?downloadformat=csv">https://api.worldbank.org/v2/en/indicator/SH.XPD.CHEX.PP.CD?downloadformat=csv</a></p>
+<p>Keep data starting from 2010.</p>
+<p>Projection: the difficulty is some countries grow too fast or decrease too fast, pure linear projection may not make sense.</p>
+<ul>
+<li>If the % is increasing between 2000-2015.<ul>
+<li>If the % is larger than OECD average 12.44%, stop and keep constant</li>
+<li>If the % is smaller than OECD average, keep increasing</li>
+</ul>
+</li>
+<li>If the % is decreasing between 2000-2015<ul>
+<li>If the % is smaller than 3% (1/3 of world average), stop decreasing</li>
+</ul>
+</li>
+</ul>
+<p><strong>Code for Processing/projecting Data:</strong></p>
+<p>health_expenditure/data_processing.ipynb</p>
+<p><strong>Output:</strong></p>
+<p><em>hepc.csv</em> or hepc_ppp.csv if using GDP_ppp.csv</p>
+<h3 id="mortality-and-morbidity-updated-sep-2021">Mortality and Morbidity, Updated Sep, 2021<a class="headerlink" href="#mortality-and-morbidity-updated-sep-2021" title="Permanent link"></a></h3>
+<p>Mortality and morbidity data source: Global Health Data Exchange</p>
+<p><a href="http://ghdx.healthdata.org/gbd-results-tool">IHME dataset website</a></p>
+<p>Go to the IHME dataset website, press F12 button and fill the javascript console, then press Enter to run the script.
+Please refer to the offical instructions to find the specic meaning of the code for ages(all 5 year groups), locations(only countries and territories), measures(Deaths, DALYs, YLDs, YLLs, Prevalence, Incidence), cause(Diabetes mellitus) and so on.
+<details>
+    <summary>Click to see details of javascript codes.</summary>
+    <pre><code>
+const years = [2019,2018,2017,2016,2015,2014,2013,2012,2011,2010]
+const cause = [587];</p>
+<p>const tasks = [];</p>
+<p>years.map(year =&gt; {
+  cause.forEach(item =&gt; {
+    tasks.push({
+      year,
+      cause: item
+    })
+  });
+});</p>
+<p>function sleep() {
+  return new Promise(resolve =&gt; {
+    setTimeout(() =&gt; {
+      resolve();
+    }, 1200);
+  })
+}</p>
+<p>(async () =&gt; {
+  for (const task of tasks) {
+    await sleep();
+    doTask(task);
+  }
+})()</p>
+<p>function doTask(task) {
+  var data = {
+    version: 7266,
+    &ldquo;year[0]&rdquo;: task.year,
+    &ldquo;age[0]&rdquo;: 1,
+    &ldquo;age[1]&rdquo;: 6,
+    &ldquo;age[2]&rdquo;: 7,
+    &ldquo;age[3]&rdquo;: 8,
+    &ldquo;age[4]&rdquo;: 9,
+    &ldquo;age[5]&rdquo;: 10,
+    &ldquo;age[6]&rdquo;: 11,
+    &ldquo;age[7]&rdquo;: 12,
+    &ldquo;age[8]&rdquo;: 13,
+    &ldquo;age[9]&rdquo;: 14,
+    &ldquo;age[10]&rdquo;: 15,
+    &ldquo;age[11]&rdquo;: 16,
+    &ldquo;age[12]&rdquo;: 17,
+    &ldquo;age[13]&rdquo;: 18,
+    &ldquo;age[14]&rdquo;: 19,
+    &ldquo;age[15]&rdquo;: 234,
+    &ldquo;cause[0]&rdquo;: task.cause,
+    &ldquo;location[0]&rdquo;: 33,
+    &ldquo;location[1]&rdquo;: 34,
+    &ldquo;location[2]&rdquo;: 35,
+    &ldquo;location[3]&rdquo;: 36,
+    &ldquo;location[4]&rdquo;: 37,
+    &ldquo;location[5]&rdquo;: 38,
+    &ldquo;location[6]&rdquo;: 39,
+    &ldquo;location[7]&rdquo;: 40,
+    &ldquo;location[8]&rdquo;: 41,
+    &ldquo;location[9]&rdquo;: 43,
+    &ldquo;location[10]&rdquo;: 44,
+    &ldquo;location[11]&rdquo;: 45,
+    &ldquo;location[12]&rdquo;: 46,
+    &ldquo;location[13]&rdquo;: 47,
+    &ldquo;location[14]&rdquo;: 48,
+    &ldquo;location[15]&rdquo;: 50,
+    &ldquo;location[16]&rdquo;: 49,
+    &ldquo;location[17]&rdquo;: 51,
+    &ldquo;location[18]&rdquo;: 52,
+    &ldquo;location[19]&rdquo;: 53,
+    &ldquo;location[20]&rdquo;: 54,
+    &ldquo;location[21]&rdquo;: 55,
+    &ldquo;location[22]&rdquo;: 57,
+    &ldquo;location[23]&rdquo;: 58,
+    &ldquo;location[24]&rdquo;: 59,
+    &ldquo;location[25]&rdquo;: 60,
+    &ldquo;location[26]&rdquo;: 61,
+    &ldquo;location[27]&rdquo;: 62,
+    &ldquo;location[28]&rdquo;: 63,
+    &ldquo;location[29]&rdquo;: 71,
+    &ldquo;location[30]&rdquo;: 72,
+    &ldquo;location[31]&rdquo;: 66,
+    &ldquo;location[32]&rdquo;: 67,
+    &ldquo;location[33]&rdquo;: 68,
+    &ldquo;location[34]&rdquo;: 69,
+    &ldquo;location[35]&rdquo;: 101,
+    &ldquo;location[36]&rdquo;: 349,
+    &ldquo;location[37]&rdquo;: 102,
+    &ldquo;location[38]&rdquo;: 97,
+    &ldquo;location[39]&rdquo;: 98,
+    &ldquo;location[40]&rdquo;: 99,
+    &ldquo;location[41]&rdquo;: 74,
+    &ldquo;location[42]&rdquo;: 75,
+    &ldquo;location[43]&rdquo;: 76,
+    &ldquo;location[44]&rdquo;: 77,
+    &ldquo;location[45]&rdquo;: 78,
+    &ldquo;location[46]&rdquo;: 79,
+    &ldquo;location[47]&rdquo;: 80,
+    &ldquo;location[48]&rdquo;: 81,
+    &ldquo;location[49]&rdquo;: 82,
+    &ldquo;location[50]&rdquo;: 83,
+    &ldquo;location[51]&rdquo;: 84,
+    &ldquo;location[52]&rdquo;: 85,
+    &ldquo;location[53]&rdquo;: 86,
+    &ldquo;location[54]&rdquo;: 87,
+    &ldquo;location[55]&rdquo;: 88,
+    &ldquo;location[56]&rdquo;: 367,
+    &ldquo;location[57]&rdquo;: 89,
+    &ldquo;location[58]&rdquo;: 90,
+    &ldquo;location[59]&rdquo;: 91,
+    &ldquo;location[60]&rdquo;: 396,
+    &ldquo;location[61]&rdquo;: 92,
+    &ldquo;location[62]&rdquo;: 93,
+    &ldquo;location[63]&rdquo;: 94,
+    &ldquo;location[64]&rdquo;: 95,
+    &ldquo;location[65]&rdquo;: 121,
+    &ldquo;location[66]&rdquo;: 122,
+    &ldquo;location[67]&rdquo;: 123,
+    &ldquo;location[68]&rdquo;: 105,
+    &ldquo;location[69]&rdquo;: 106,
+    &ldquo;location[70]&rdquo;: 107,
+    &ldquo;location[71]&rdquo;: 108,
+    &ldquo;location[72]&rdquo;: 305,
+    &ldquo;location[73]&rdquo;: 109,
+    &ldquo;location[74]&rdquo;: 110,
+    &ldquo;location[75]&rdquo;: 111,
+    &ldquo;location[76]&rdquo;: 112,
+    &ldquo;location[77]&rdquo;: 113,
+    &ldquo;location[78]&rdquo;: 114,
+    &ldquo;location[79]&rdquo;: 115,
+    &ldquo;location[80]&rdquo;: 385,
+    &ldquo;location[81]&rdquo;: 393,
+    &ldquo;location[82]&rdquo;: 116,
+    &ldquo;location[83]&rdquo;: 117,
+    &ldquo;location[84]&rdquo;: 118,
+    &ldquo;location[85]&rdquo;: 119,
+    &ldquo;location[86]&rdquo;: 422,
+    &ldquo;location[87]&rdquo;: 125,
+    &ldquo;location[88]&rdquo;: 126,
+    &ldquo;location[89]&rdquo;: 127,
+    &ldquo;location[90]&rdquo;: 128,
+    &ldquo;location[91]&rdquo;: 129,
+    &ldquo;location[92]&rdquo;: 130,
+    &ldquo;location[93]&rdquo;: 131,
+    &ldquo;location[94]&rdquo;: 132,
+    &ldquo;location[95]&rdquo;: 133,
+    &ldquo;location[96]&rdquo;: 135,
+    &ldquo;location[97]&rdquo;: 136,
+    &ldquo;location[98]&rdquo;: 160,
+    &ldquo;location[99]&rdquo;: 139,
+    &ldquo;location[100]&rdquo;: 140,
+    &ldquo;location[101]&rdquo;: 141,
+    &ldquo;location[102]&rdquo;: 142,
+    &ldquo;location[103]&rdquo;: 143,
+    &ldquo;location[104]&rdquo;: 144,
+    &ldquo;location[105]&rdquo;: 145,
+    &ldquo;location[106]&rdquo;: 146,
+    &ldquo;location[107]&rdquo;: 147,
+    &ldquo;location[108]&rdquo;: 148,
+    &ldquo;location[109]&rdquo;: 150,
+    &ldquo;location[110]&rdquo;: 149,
+    &ldquo;location[111]&rdquo;: 151,
+    &ldquo;location[112]&rdquo;: 152,
+    &ldquo;location[113]&rdquo;: 522,
+    &ldquo;location[114]&rdquo;: 153,
+    &ldquo;location[115]&rdquo;: 154,
+    &ldquo;location[116]&rdquo;: 155,
+    &ldquo;location[117]&rdquo;: 156,
+    &ldquo;location[118]&rdquo;: 157,
+    &ldquo;location[119]&rdquo;: 161,
+    &ldquo;location[120]&rdquo;: 162,
+    &ldquo;location[121]&rdquo;: 163,
+    &ldquo;location[122]&rdquo;: 164,
+    &ldquo;location[123]&rdquo;: 165,
+    &ldquo;location[124]&rdquo;: 6,
+    &ldquo;location[125]&rdquo;: 7,
+    &ldquo;location[126]&rdquo;: 8,
+    &ldquo;location[127]&rdquo;: 298,
+    &ldquo;location[128]&rdquo;: 320,
+    &ldquo;location[129]&rdquo;: 22,
+    &ldquo;location[130]&rdquo;: 351,
+    &ldquo;location[131]&rdquo;: 23,
+    &ldquo;location[132]&rdquo;: 24,
+    &ldquo;location[133]&rdquo;: 25,
+    &ldquo;location[134]&rdquo;: 369,
+    &ldquo;location[135]&rdquo;: 374,
+    &ldquo;location[136]&rdquo;: 376,
+    &ldquo;location[137]&rdquo;: 380,
+    &ldquo;location[138]&rdquo;: 26,
+    &ldquo;location[139]&rdquo;: 27,
+    &ldquo;location[140]&rdquo;: 28,
+    &ldquo;location[141]&rdquo;: 413,
+    &ldquo;location[142]&rdquo;: 29,
+    &ldquo;location[143]&rdquo;: 416,
+    &ldquo;location[144]&rdquo;: 30,
+    &ldquo;location[145]&rdquo;: 10,
+    &ldquo;location[146]&rdquo;: 11,
+    &ldquo;location[147]&rdquo;: 12,
+    &ldquo;location[148]&rdquo;: 13,
+    &ldquo;location[149]&rdquo;: 14,
+    &ldquo;location[150]&rdquo;: 183,
+    &ldquo;location[151]&rdquo;: 15,
+    &ldquo;location[152]&rdquo;: 16,
+    &ldquo;location[153]&rdquo;: 186,
+    &ldquo;location[154]&rdquo;: 17,
+    &ldquo;location[155]&rdquo;: 18,
+    &ldquo;location[156]&rdquo;: 19,
+    &ldquo;location[157]&rdquo;: 20,
+    &ldquo;location[158]&rdquo;: 168,
+    &ldquo;location[159]&rdquo;: 169,
+    &ldquo;location[160]&rdquo;: 170,
+    &ldquo;location[161]&rdquo;: 171,
+    &ldquo;location[162]&rdquo;: 172,
+    &ldquo;location[163]&rdquo;: 173,
+    &ldquo;location[164]&rdquo;: 175,
+    &ldquo;location[165]&rdquo;: 176,
+    &ldquo;location[166]&rdquo;: 177,
+    &ldquo;location[167]&rdquo;: 178,
+    &ldquo;location[168]&rdquo;: 179,
+    &ldquo;location[169]&rdquo;: 180,
+    &ldquo;location[170]&rdquo;: 181,
+    &ldquo;location[171]&rdquo;: 182,
+    &ldquo;location[172]&rdquo;: 184,
+    &ldquo;location[173]&rdquo;: 185,
+    &ldquo;location[174]&rdquo;: 187,
+    &ldquo;location[175]&rdquo;: 435,
+    &ldquo;location[176]&rdquo;: 190,
+    &ldquo;location[177]&rdquo;: 189,
+    &ldquo;location[178]&rdquo;: 191,
+    &ldquo;location[179]&rdquo;: 193,
+    &ldquo;location[180]&rdquo;: 197,
+    &ldquo;location[181]&rdquo;: 194,
+    &ldquo;location[182]&rdquo;: 195,
+    &ldquo;location[183]&rdquo;: 196,
+    &ldquo;location[184]&rdquo;: 198,
+    &ldquo;location[185]&rdquo;: 200,
+    &ldquo;location[186]&rdquo;: 201,
+    &ldquo;location[187]&rdquo;: 203,
+    &ldquo;location[188]&rdquo;: 202,
+    &ldquo;location[189]&rdquo;: 204,
+    &ldquo;location[190]&rdquo;: 205,
+    &ldquo;location[191]&rdquo;: 206,
+    &ldquo;location[192]&rdquo;: 207,
+    &ldquo;location[193]&rdquo;: 208,
+    &ldquo;location[194]&rdquo;: 209,
+    &ldquo;location[195]&rdquo;: 210,
+    &ldquo;location[196]&rdquo;: 211,
+    &ldquo;location[197]&rdquo;: 212,
+    &ldquo;location[198]&rdquo;: 213,
+    &ldquo;location[199]&rdquo;: 214,
+    &ldquo;location[200]&rdquo;: 215,
+    &ldquo;location[201]&rdquo;: 216,
+    &ldquo;location[202]&rdquo;: 217,
+    &ldquo;location[203]&rdquo;: 218,
+    &ldquo;measure[0]&rdquo;: 1,
+    &ldquo;measure[1]&rdquo;: 2,
+    &ldquo;measure[2]&rdquo;: 3,
+    &ldquo;measure[3]&rdquo;: 4,
+    &ldquo;measure[4]&rdquo;: 5,
+    &ldquo;measure[5]&rdquo;: 6,
+    &ldquo;sex[0]&rdquo;: 1,
+    &ldquo;sex[1]&rdquo;: 2,
+    &ldquo;metric[0]&rdquo;: 1,
+    &ldquo;metric[1]&rdquo;: 2,
+    &ldquo;metric[2]&rdquo;: 3,
+    base: &ldquo;single&rdquo;,
+    context: &ldquo;cause&rdquo;,
+    audience: &ldquo;public&rdquo;,
+    gbdRound: 2019,
+    toolID: 1,
+    email: &ldquo;<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#101;&#99;&#104;&#64;&#122;&#104;&#111;&#110;&#103;&#99;&#97;&#111;&#46;&#102;&#105;&#116;">&#116;&#101;&#99;&#104;&#64;&#122;&#104;&#111;&#110;&#103;&#99;&#97;&#111;&#46;&#102;&#105;&#116;</a>&rdquo;,
+    idsOrNames: &ldquo;names&rdquo;,
+    numParams: 18,
+    rows: 500000,
+    singleOrMult: &ldquo;single&rdquo;,
+  };</p>
+<p>fetch(&lsquo;<a href="https://ghdx.healthdata.org/sites/all/modules/custom/ihme_query_tool/gbd-search/php/download.php">https://ghdx.healthdata.org/sites/all/modules/custom/ihme_query_tool/gbd-search/php/download.php</a>&rsquo;, {
+    method: &lsquo;POST&rsquo;,
+    headers: {
+      &lsquo;Content-Type&rsquo;: &lsquo;application/x-www-form-urlencoded&rsquo;
+    },
+    body: Object.keys(data).map(key =&gt; {
+      return <code>${key}=${data[key]}</code>
+    }).join(&lsquo;&amp;&rsquo;)
+  })
+}
+    </code></pre>
+</details></p>
+<p>Then, run ./Mortality_morbidity/IHME/IHME.ipynb for examples of generating mortality/morbidity data for the CANCER project.</p>
+<p>Finally, output 204 countries mortality and morbidity data:  &ldquo;./Mortality_morbidity/IHME/data_cancer/mortality_val.csv, morbidity_val.csv&rdquo;</p>
+<h3 id="physical-capital-updated-to-nov-8-2021-accessed-by-apr-2022">Physical Capital, updated to Nov 8, 2021. Accessed by Apr, 2022<a class="headerlink" href="#physical-capital-updated-to-nov-8-2021-accessed-by-apr-2022" title="Permanent link"></a></h3>
+<p><strong>Data Source:</strong> Penn World Table (from 1990-2019)</p>
+<p><a href="https://fred.stlouisfed.org/categories/33404?t=capital&amp;ob=pv&amp;od=desc">Physical PPP 2017 Download Link</a></p>
+<p><a href="https://fred.stlouisfed.org/categories/33405?cid=33405&amp;et=&amp;ob=pv&amp;od=desc&amp;pageID=1&amp;t=stocks">Physical constant 2017 Download Link</a>(failed to download)</p>
+<p>save data files into &ldquo;./physicalcapital/physical_ppp&rdquo;</p>
+<p><strong>Code for Processing Data:</strong></p>
+<p>Physicalcapital/process_physical.ipynb</p>
+<p>Finally, output 167 countries physical capital data:  &ldquo;./physicalcapital/physical_ppp.csv&rdquo;</p>
+<div class="highlight"><pre>181 countries
+
+Subtraction from WB: [&#39;ABW&#39;, &#39;AFG&#39;, &#39;AND&#39;, &#39;ARE&#39;, &#39;ASM&#39;, &#39;CHI&#39;, &#39;CUB&#39;, &#39;CUW&#39;, &#39;CYM&#39;, &#39;DZA&#39;, &#39;ERI&#39;, &#39;FRO&#39;, &#39;FSM&#39;, &#39;GIB&#39;, &#39;GRL&#39;, &#39;GUM&#39;, &#39;GUY&#39;, &#39;HTI&#39;, &#39;IMN&#39;, &#39;KIR&#39;, &#39;LBY&#39;, &#39;LIE&#39;, &#39;MAF&#39;, &#39;MCO&#39;, &#39;MHL&#39;, &#39;MMR&#39;, &#39;MNP&#39;, &#39;NCL&#39;, &#39;NIC&#39;, &#39;NRU&#39;, &#39;PLW&#39;, &#39;PNG&#39;, &#39;PRI&#39;, &#39;PRK&#39;, &#39;PYF&#39;, &#39;SLB&#39;, &#39;SMR&#39;, &#39;SOM&#39;, &#39;SSD&#39;, &#39;SXM&#39;, &#39;SYC&#39;, &#39;TCA&#39;, &#39;TLS&#39;, &#39;TON&#39;, &#39;TUV&#39;, &#39;VGB&#39;, &#39;VIR&#39;, &#39;VUT&#39;, &#39;WSM&#39;, &#39;XKX&#39;] 50
+Plus from WB: [&#39;TWN&#39;] 1
+Subtraction from GBD : [&#39;AFG&#39;, &#39;AND&#39;, &#39;ARE&#39;, &#39;ASM&#39;, &#39;COK&#39;, &#39;CUB&#39;, &#39;DZA&#39;, &#39;ERI&#39;, &#39;FSM&#39;, &#39;GRL&#39;, 
+&#39;GUM&#39;, &#39;GUY&#39;, &#39;HTI&#39;, &#39;KIR&#39;, &#39;LBY&#39;, &#39;MCO&#39;, &#39;MHL&#39;, &#39;MMR&#39;, &#39;MNP&#39;, &#39;NIC&#39;, 
+&#39;NIU&#39;, &#39;NRU&#39;, &#39;PLW&#39;, &#39;PNG&#39;, &#39;PRI&#39;, &#39;PRK&#39;, &#39;PSE&#39;, &#39;SLB&#39;, &#39;SMR&#39;, &#39;SOM&#39;, 
+&#39;SSD&#39;, &#39;SYC&#39;, &#39;TKL&#39;, &#39;TLS&#39;, &#39;TON&#39;, &#39;TUV&#39;, &#39;VIR&#39;, &#39;VUT&#39;, &#39;WSM&#39;] 39
+Plus from GBD : [&#39;HKG&#39;, &#39;MAC&#39;] 2
+</pre></div>
+
+<h3 id="treatment-cost-updated-to-nov-8-2021-accessed-by-apr-2022">Treatment Cost, updated to Nov 8 2021. Accessed by Apr, 2022<a class="headerlink" href="#treatment-cost-updated-to-nov-8-2021-accessed-by-apr-2022" title="Permanent link"></a></h3>
+<p>HMM previous papers concentrate on estimating with JAMA 2016[1].
+This is the tricky part, and each disease may vary significantly. </p>
+<ol>
+<li>Assuming that TC(country, disease) = const * prevalence(country, disease) * house expenditure(country, disease)</li>
+<li>According to JAMA 2016 [1], we could calculate the radio of each disease treatment cost to all disease treatment costs in the USA. Then TC(USA, Diabetes mellitus) = USA_house_expenditure * 101.4 / 2100.1 </li>
+</ol>
+<p>Due to the recent study on direct cost of diabetes mellitus, we adopted <a href="https://diabetesatlas.org/data/en/indicators/19/">treatment data</a> for in 2011 or 2021 estimated by International Diabetes Federation (IDF)[2] 2011-2021. The data is per patient cost. So we calculate per capita cost, which is per patient cost * prevalence rate.</p>
+<p>[1] Dieleman JL, Baral R, Birger M, Bui AL, Bulchis A, Chapin A, Hamavid H, Horst C, Johnson EK, Joseph J, Lavado R, Lomsadze L, Reynolds A, Squires E, Campbell M, DeCenso B, Dicker D, Flaxman AD, Gabert R, Highfill T, Naghavi M, Nightingale N, Templin T, Tobias MI, Vos T, Murray CJ. US Spending on Personal Health Care and Public Health, 1996-2013. JAMA. 2016 Dec 27;316(24):2627-2646. doi: 10.1001/jama.2016.16885. PMID: 28027366; PMCID: PMC5551483.
+[2] Williams R, Karuranga S, Malanda B, Saeedi P, Basit A, Besançon S, Bommer C, Esteghamati A, Ogurtsova K, Zhang P, Colagiuri S. Global and regional estimates and projections of diabetes-related health expenditure: Results from the International Diabetes Federation Diabetes Atlas, 9th edition. Diabetes Res Clin Pract. 2020 Apr;162:108072. doi: 10.1016/j.diabres.2020.108072. Epub 2020 Feb 13. PMID: 32061820.</p></article></body></html>
