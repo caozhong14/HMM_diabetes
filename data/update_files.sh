@@ -10,6 +10,7 @@ TARGET_PATH="."
 ##############################
 cp  ${SOURCE_PATH}/education/education_filled.csv ${TARGET_PATH}/education_filled.csv
 cp  ${SOURCE_PATH}/GDP/GDP_ppp.csv ${TARGET_PATH}/GDP_ppp.csv
+cp  ${SOURCE_PATH}/GDP/GDP_ppp_cia.csv ${TARGET_PATH}/GDP_ppp_cia.csv
 cp  ${SOURCE_PATH}/health_expenditure/hepc_ppp.csv ${TARGET_PATH}/hepc_ppp.csv
 cp  ${SOURCE_PATH}/labor/laborparticipation_final.csv ${TARGET_PATH}/laborparticipation_final.csv
 cp  ${SOURCE_PATH}/physicalcapital/physical_ppp.csv ${TARGET_PATH}/physical_ppp.csv

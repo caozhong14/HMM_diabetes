@@ -106,10 +106,11 @@ else:
 # In[ ]:
 
 
-def get_df(df_result, ConsiderTC, ConsiderMB, discount, scenario):
+def get_df(df_result, ConsiderTC, ConsiderMB, informal, discount, scenario):
     df = df_result[(df_result['discount']==discount)&
                    (df_result['ConsiderTC']==ConsiderTC)&
                    (df_result['ConsiderMB']==ConsiderMB)&
+                   (df_result['informal']==informal)&
                    (df_result['scenario']==scenario)]
     df = df[df['tax'] > 0]
     return df
@@ -234,10 +235,12 @@ def get_estimation_result(STATISTICS_DATA, est, ols_results):
 # In[ ]:
 
 
-def Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderMB, discount, scenario):
+def Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderMB, informal, discount, scenario):
     pieces = []
-    df_agg = get_df(df_result, ConsiderTC, ConsiderMB, discount, scenario)
+    df_agg = get_df(df_result, ConsiderTC, ConsiderMB, informal, discount, scenario)
     l1 =  len(df_agg)
+    if l1 == 0:
+        return df_agg
     Indicator = get_Indicator_data()
 
     with open(summaryfile, 'a+') as f:
@@ -262,6 +265,7 @@ def Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderM
                 est['scenario'] = scenario
                 est['ConsiderTC'] = ConsiderTC
                 est['ConsiderMB'] = ConsiderMB
+                est['informal'] = informal
                 est['discount'] = discount     
                 pieces.append(est)  
                 print (disease, file=f2)      
@@ -272,7 +276,7 @@ def Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderM
     df = pd.concat(pieces)
     l2 = len(df)
     print(l1, l2)
-    assert(l1 + l2 == 204 * 29)
+    assert(l1 + l2 == 204 * 1)
     
     return df
         
@@ -298,7 +302,7 @@ if __name__ == "__main__":
     STATISTICS_DATA = GDP_filled.merge(POP_filled, on='Country Code')
     countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv')
     code_map = dict(zip(countries_info.country, countries_info['Country Code']))
-    df_IHME = pd.read_csv("bigdata/Total cancers/IHME.csv")
+    df_IHME = pd.read_csv("bigdata/data_diabetes/IHME.csv")
     df_IHME['Country Code'] = df_IHME['location'].apply(lambda x:code_map[x])
     df_IHME = df_IHME[df_IHME['year']==2019]
     print(df_result.columns)
@@ -314,19 +318,20 @@ if __name__ == "__main__":
     for ConsiderTC in [1, 0]:
         for ConsiderMB in [1]:
             for scenario in ['val', 'lower', 'upper']:
-                for discount in [0, 0.02, 0.03]:
-                    print(ConsiderTC, ConsiderMB, discount, scenario)
-                    est_df = Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderMB, discount, scenario)
-                    est_pieces.append(est_df)
+                for informal in [0, 0.05, 0.11, 0.23]:
+                    for discount in [0, 0.02, 0.03]:
+                        print(ConsiderTC, ConsiderMB, informal, discount, scenario)
+                        est_df = Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderMB, informal, discount, scenario)
+                        est_pieces.append(est_df)
     df = pd.concat(est_pieces)
     df.to_csv('tmpresults/est.csv', index=False)
 
 
     # In[ ]:
     df_imputed = pd.concat([df_result, df])
-    df_imputed = df_imputed.drop_duplicates(subset=['ConsiderTC', 'ConsiderMB','scenario','discount', 'disease','Country Code'], keep='last')
-    df_imputed.sort_values(['ConsiderTC', 'ConsiderMB','scenario','discount', 'disease','Country Code'], inplace=True)
-    df_imputed.to_csv(args.output)
+    df_imputed = df_imputed.drop_duplicates(subset=['ConsiderTC','ConsiderMB','informal','discount','scenario','disease','Country Code'], keep='last')
+    df_imputed.sort_values(['ConsiderTC', 'ConsiderMB','informal','discount','scenario','disease','Country Code'], inplace=True)
+    df_imputed.to_csv(args.output, index=False)
 
     # In[ ]:
     print('primary data:', len(df_result))

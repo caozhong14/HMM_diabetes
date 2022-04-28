@@ -1,15 +1,12 @@
 # #!/bin/bash
 
 # ## sample data
-# mkdir bigdata
-# # wget http://82.157.178.197/f/2a53bc693d2148ccbc9d/?dl=1 -O bigdata/mortality_val.csv
-# # wget http://82.157.178.197/f/2c666e9c78184492a30d/?dl=1 -O bigdata/morbidity_val.csv
-# wget http://82.157.178.197/f/aef14e9dd9ff470fbeb4/?dl=1 -O 'bigdata/Total cancers.zip'
-# unzip 'bigdata/Total cancers.zip' -d 'bigdata/Total cancers'
+mkdir bigdata
+cd bigdata 
 
-# ## All mortality and morbidity val data
-# cd bigdata
-# wget http://82.157.178.197/f/24ac89d6f75240ff951e/?dl=1 -O mortality_val.csv
+wget http://82.157.178.197/f/cefb50cc35d3483abe3c/?dl=1 -O data_diabetes.zip
+unzip data_diabetes.zip
+
 # wget http://82.157.178.197/f/98f54e8e99244764804d/?dl=1 -O morbidity_val.csv
 # wget http://82.157.178.197/f/c0cb817422a249afae93/?dl=1 -O mortality_upper.csv
 # wget http://82.157.178.197/f/097d4e99fbea487e8c1b/?dl=1 -O morbidity_upper.csv
@@ -22,6 +19,6 @@
 
 
 # ## All mortality and morbidity val/upper/lower data
-# ## or you can just open the url by chrome/safari browser 
-# ## url: http://82.157.178.197/d/38ae677ec351492fb4d0/
-# ## or url: http://file.zhongcao.fit/d/38ae677ec351492fb4d0/ 
+# ## or you can just open the url by chrome/safari browser to download the specific file.
+# ## url: http://82.157.178.197/d/3ba6ec78b618463ebcb4/
+# ## or url: http://file.zhongcao.fit/d/3ba6ec78b618463ebcb4/
