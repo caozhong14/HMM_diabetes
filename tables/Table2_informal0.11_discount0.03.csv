@@ -1,12 +1,13 @@
 location,disease,burden,tax %,pc_loss
-East Asia & Pacific,Diabetes mellitus,36284 (25.2%),1.57,14743
-Europe & Central Asia,Diabetes mellitus,34075 (23.7%),2.57,36617
-Latin America & Caribbean,Diabetes mellitus,7323 (5.1%),1.95,10199
-Middle East & North Africa,Diabetes mellitus,9056 (6.3%),2.55,16120
-North America,Diabetes mellitus,31774 (22.1%),3.42,79558
-South Asia,Diabetes mellitus,23291 (16.2%),2.56,11035
-Sub-Saharan Africa,Diabetes mellitus,1921 (1.3%),0.8,1170
-High income,Diabetes mellitus,71792 (49.9%),2.92,57949
-Low income,Diabetes mellitus,989 (0.7%),1.06,1028
-Lower middle income,Diabetes mellitus,34986 (24.3%),2.16,8885
-Upper middle income,Diabetes mellitus,35558 (24.7%),1.57,13418
+East Asia & Pacific,Diabetes mellitus,35651 (25.4%),2.57,14486
+Europe & Central Asia,Diabetes mellitus,33714 (24.1%),4.11,36229
+Latin America & Caribbean,Diabetes mellitus,7276 (5.2%),3.06,10133
+Middle East & North Africa,Diabetes mellitus,6617 (4.7%),3.07,11778
+North America,Diabetes mellitus,31773 (22.7%),5.49,79556
+South Asia,Diabetes mellitus,23250 (16.6%),4.51,11016
+Sub-Saharan Africa,Diabetes mellitus,1785 (1.3%),1.25,1087
+High income,Diabetes mellitus,71341 (50.9%),4.66,57584
+Low income,Diabetes mellitus,694 (0.5%),1.29,721
+Lower middle income,Diabetes mellitus,32676 (23.3%),3.5,8298
+Upper middle income,Diabetes mellitus,35050 (25.0%),2.55,13227
+global,Diabetes mellitus,140086 (100.0%),3.59,15864

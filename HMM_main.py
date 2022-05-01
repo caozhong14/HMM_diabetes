@@ -10,6 +10,7 @@ import math
 import sys
 import os
 import argparse
+import pdb
 
 # # Helper functions to retrieve data
 
@@ -218,6 +219,7 @@ def getSigma2(a,t,sigma, Morbidity):
 
 
 def project(disease, country, startyear, projectStartYear, endyear, ConsiderMB, Reduced, TC, scen='val', informal=0.0, discount = 0.02):
+    # pdb.set_trace()
     alpha, delta,InitialCapitalStock,s = get_params(country)
     GDP_SQ = getGDP(country, startyear, endyear)
     population = getPop(country, startyear, endyear) 
@@ -301,9 +303,10 @@ def project(disease, country, startyear, projectStartYear, endyear, ConsiderMB, 
     # tax rate loss
     tax = np.sum(np.subtract(GDP_CF,GDP_SQ))/sum(GDP_SQ[projectStartYear-startyear:])
     # per capita loss
-    pc_loss = np.sum(np.subtract(GDP_CF,GDP_SQ))/population.sum(axis = 0).mean()
+    # pdb.set_trace()
+    pc_loss = np.sum(np.subtract(GDP_CF,GDP_SQ))/(population.sum(axis = 0)[projectStartYear-startyear:].mean())
     df = pd.DataFrame()
-    df['GDP_loss_percapita'] = np.subtract(GDP_CF,GDP_SQ)/ population.sum(axis = 0)
+    df['GDP_loss_percapita'] = np.subtract(GDP_CF,GDP_SQ)/ (population.sum(axis = 0))
     df = df.reset_index()
     df = df.rename(columns={'index':'year'})
     df['GDP_loss'] = np.subtract(GDP_CF,GDP_SQ)
@@ -383,7 +386,9 @@ if __name__ == "__main__":
     if args.ran: # Run on only five countries and two diseases for test
         print("random choose diseases and countries for test")
         diseases = np.random.choice(diseases, 2)
-        countries = np.random.choice(countries, 5)
+        # countries = np.random.choice(countries, 5)
+        diseases = np.array(['Diabetes mellitus'])
+        countries = np.array(['LBR'])
     diseases = sorted(diseases)
     pieces_df = []
     pieces_result = []
@@ -423,12 +428,17 @@ if __name__ == "__main__":
                 pieces_result.append(result)
             except:
                 print("failed %s: scenario:%s, TC:%s, MB%s"%(country, scenario, ConsiderTC, ConsiderMB))
+    save_annfilename = 'tmpresults/annual_results_TC%s_MB%s_informal%s_discount%s_%s.csv'%(ConsiderTC,ConsiderMB,informal,discount,scenario)
+    save_aggfilename = 'tmpresults/aggregate_results_TC%s_MB%s_informal%s_discount%s_%s.csv'%(ConsiderTC,ConsiderMB,informal,discount,scenario)
+    if args.ran:
+        save_annfilename = 'tmpresults/runexampleann.csv'
+        save_aggfilename = 'tmpresults/runexampleagg.csv'
 
     df = pd.concat(pieces_df).reset_index()
-    df.to_csv('tmpresults/annual_results_TC%s_MB%s_informal%s_discount%s_%s.csv'%(ConsiderTC,ConsiderMB,informal,discount,scenario), index=False)
+    df.to_csv(save_annfilename, index=False)
 
     df = pd.concat(pieces_result)
-    df.to_csv('tmpresults/aggregate_results_TC%s_MB%s_informal%s_discount%s_%s.csv'%(ConsiderTC,ConsiderMB,informal,discount,scenario), index=False)
+    df.to_csv(save_aggfilename, index=False)
 
 
 

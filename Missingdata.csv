@@ -1,0 +1,62 @@
+Region,country,WBCountry,Country Code,GDP_ppp.csv,TC_ppp.csv,education_filled.csv,hepc_ppp.csv,laborparticipation_final.csv,physical_ppp.csv,population_un.csv,savings.csv
+East Asia & Pacific,American Samoa,American Samoa,ASM,X,X,,X,X,X,X,X
+East Asia & Pacific,Democratic People's Republic of Korea,"Korea, Dem. People's Rep.",PRK,X,X,X,X,,X,,X
+East Asia & Pacific,Guam,Guam,GUM,X,X,,X,,X,,X
+East Asia & Pacific,Kiribati,Kiribati,KIR,,,,,X,X,,
+East Asia & Pacific,Marshall Islands,Marshall Islands,MHL,,,,,X,X,X,
+East Asia & Pacific,Micronesia (Federated States of),"Micronesia, Fed. Sts.",FSM,,,,,X,X,,X
+East Asia & Pacific,Myanmar,Myanmar,MMR,,,,,,X,,
+East Asia & Pacific,Nauru,Nauru,NRU,,,,,X,X,X,X
+East Asia & Pacific,Northern Mariana Islands,Northern Mariana Islands,MNP,X,X,,X,X,X,X,X
+East Asia & Pacific,Palau,Palau,PLW,,,,,X,X,X,X
+East Asia & Pacific,Papua New Guinea,Papua New Guinea,PNG,,,,,,X,,X
+East Asia & Pacific,Samoa,Samoa,WSM,,,,,,X,,X
+East Asia & Pacific,Solomon Islands,Solomon Islands,SLB,,,,,,X,,
+East Asia & Pacific,Taiwan (Province of China),,TWN,X,,,X,,,,X
+East Asia & Pacific,Timor-Leste,Timor-Leste,TLS,,,,,,X,,
+East Asia & Pacific,Tonga,Tonga,TON,,,,,,X,,
+East Asia & Pacific,Tuvalu,Tuvalu,TUV,,,,,X,X,X,X
+East Asia & Pacific,Vanuatu,Vanuatu,VUT,,,,,,X,,
+Europe & Central Asia,Andorra,Andorra,AND,X,,,X,X,X,X,X
+Europe & Central Asia,Greenland,Greenland,GRL,X,X,,X,X,X,X,X
+Europe & Central Asia,Monaco,Monaco,MCO,X,,,X,X,X,X,X
+Europe & Central Asia,Montenegro,Montenegro,MNE,,X,,,,,,
+Europe & Central Asia,San Marino,San Marino,SMR,,,,,X,X,X,X
+Europe & Central Asia,Turkmenistan,Turkmenistan,TKM,,,,,,,,X
+Latin America & Caribbean,Antigua and Barbuda,Antigua and Barbuda,ATG,,,,,X,,,
+Latin America & Caribbean,Cuba,Cuba,CUB,X,,,X,,X,,X
+Latin America & Caribbean,Dominica,Dominica,DMA,,,,,X,,X,
+Latin America & Caribbean,Grenada,Grenada,GRD,,,,,X,,,X
+Latin America & Caribbean,Guyana,Guyana,GUY,,,,,,X,,X
+Latin America & Caribbean,Haiti,Haiti,HTI,,,,,,X,,
+Latin America & Caribbean,Nicaragua,Nicaragua,NIC,,,,,,X,,
+Latin America & Caribbean,Puerto Rico,Puerto Rico,PRI,,X,,X,,X,,X
+Latin America & Caribbean,Saint Kitts and Nevis,St. Kitts and Nevis,KNA,,,,,X,,X,X
+Latin America & Caribbean,Saint Lucia,St. Lucia,LCA,,,,,,,,X
+Latin America & Caribbean,Saint Vincent and the Grenadines,St. Vincent and the Grenadines,VCT,,,,,,,,X
+Latin America & Caribbean,Trinidad and Tobago,Trinidad and Tobago,TTO,,,,,,,,X
+Latin America & Caribbean,United States Virgin Islands,Virgin Islands (U.S.),VIR,X,X,,X,,X,,X
+Latin America & Caribbean,Venezuela (Bolivarian Republic of),"Venezuela, RB",VEN,X,X,,X,,,,
+Middle East & North Africa,Algeria,Algeria,DZA,,,,,,X,,
+Middle East & North Africa,Egypt,"Egypt, Arab Rep.",EGY,,X,,,,,,
+Middle East & North Africa,Iran (Islamic Republic of),"Iran, Islamic Rep.",IRN,,,,,,,,X
+Middle East & North Africa,Libya,Libya,LBY,,,,,,X,,X
+Middle East & North Africa,Syrian Arab Republic,Syrian Arab Republic,SYR,X,,,X,,,,
+Middle East & North Africa,United Arab Emirates,United Arab Emirates,ARE,,,,,,X,,X
+Middle East & North Africa,Yemen,"Yemen, Rep.",YEM,X,,,X,,,,X
+North America,Bermuda,Bermuda,BMU,X,X,,X,X,,X,
+South Asia,Afghanistan,Afghanistan,AFG,,,,,,X,,X
+Sub-Saharan Africa,Central African Republic,Central African Republic,CAF,,,,,,,,X
+Sub-Saharan Africa,Chad,Chad,TCD,,,,,,,,X
+Sub-Saharan Africa,Equatorial Guinea,Equatorial Guinea,GNQ,,,,,,,,X
+Sub-Saharan Africa,Eritrea,Eritrea,ERI,X,,,X,,X,,X
+Sub-Saharan Africa,Liberia,Liberia,LBR,,,,,,,,X
+Sub-Saharan Africa,Malawi,Malawi,MWI,,,,,,,,X
+Sub-Saharan Africa,Sao Tome and Principe,Sao Tome and Principe,STP,,,,,,,,X
+Sub-Saharan Africa,Seychelles,Seychelles,SYC,,,X,,X,X,,
+Sub-Saharan Africa,Somalia,Somalia,SOM,,,,X,,X,,X
+Sub-Saharan Africa,South Sudan,South Sudan,SSD,X,X,,X,,X,,
+,Cook Islands,,COK,X,,X,X,X,X,X,X
+,Niue,,NIU,X,,X,X,X,X,X,X
+,Palestine,,PSE,X,X,X,X,,X,,
+,Tokelau,,TKL,X,X,X,X,X,X,X,X

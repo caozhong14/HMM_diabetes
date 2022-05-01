@@ -9,6 +9,7 @@ import statsmodels.api as sm
 from statsmodels.multivariate.pca import PCA
 import matplotlib.pyplot as plt
 import os
+import numpy as np
 import argparse
 PPP = True
 endyear = 2051
@@ -25,79 +26,85 @@ coefficient_file = 'tmpresults/models_coefficient.txt'
 
 ## MAIN FUNCTION - input
 ## OUTPUT FILE
-save_filename_gdp_total = 'data/GDP_TOTAL.csv'
-save_filename_pop_total = 'data/POP_TOTAL.csv'
-save_filename_gdp_psy = 'data/GDP_PSY.csv'
-save_filename_pop_psy = 'data/POP_PSY.csv'
+save_filename_gdp_total1 = 'tmpresults/GDP_TOTAL_discount0.csv'
+save_filename_gdp_total2 = 'tmpresults/GDP_TOTAL_discount0.02.csv'
+save_filename_gdp_total3 = 'tmpresults/GDP_TOTAL_discount0.03.csv'
+save_filename_pop_total = 'tmpresults/POP_TOTAL.csv'
+save_filename_gdp_psy = 'tmpresults/GDP_PSY.csv'
+save_filename_pop_psy = 'tmpresults/POP_PSY.csv'
 
 
 
 
-if os.path.exists(save_filename_gdp_total) and \
+if os.path.exists(save_filename_gdp_total1) and \
+    os.path.exists(save_filename_gdp_total2) and \
+    os.path.exists(save_filename_gdp_total3) and \
     os.path.exists(save_filename_pop_total) and \
     os.path.exists(save_filename_gdp_psy) and \
     os.path.exists(save_filename_pop_psy) :
     pass
 else:
-    ## Prepare the gdp and pop data
-    ## INPUT FILE
-    # pop_data = pd.read_csv('../data/population_final.csv')
+    PPP = True
     if PPP:
         gdp_data = pd.read_csv('data/GDP_ppp.csv')
         gdp_cia = pd.read_csv('data/GDP_ppp_cia.csv')
     else:
         gdp_data = pd.read_csv('data/GDP.csv')
 
+    pop_data_un = pd.read_csv('data/population_un.csv')
     pop_data_total = pd.read_csv('data/population_total.csv')
 
+    startyear = 2019
+    projectStartYear = 2020
+    endyear = 2051
     # percap = pd.read_csv('../data/GDP_per_cia.csv')
-
     grow_rate = 0.03
+    pop_un = pop_data_un.groupby('Country Code').sum()
+    pop_total = pop_un[[str(i) for i in range(projectStartYear,endyear,1)]].sum(axis=1).to_frame('totalPOP')
+    pop_fill = pop_data_total.set_index('Country Code')
+    pop_filled = pop_fill[[str(i) for i in range(projectStartYear,endyear,1)]].sum(axis=1).to_frame('totalPOP')
+    allPDP = pd.concat([pop_total, pop_filled]).reset_index()
+    allPDP = allPDP.drop_duplicates(subset=['Country Code'], keep='first')
+    allPDP.to_csv('tmpresults/POP_TOTAL.csv', index=False)
 
+    for discount in [0, 0.02, 0.03]:
+        DiscountRate = []
+        rate = 1 / (1 - discount) ** (projectStartYear - startyear)
+        DiscountRate.append(rate)
+        for i in range(1, endyear-startyear, 1):
+            rate = rate * (1 - discount)
+            DiscountRate.append(rate)
 
-    # In[ ]:
+        years = [str(i) for i in range(startyear, endyear, 1)]
+        gdp = gdp_data[years].values
+        index = gdp_data['Country Code']
+        gdp_total = (gdp * DiscountRate)[:, projectStartYear-startyear:].sum(axis=1)
+        gdp_total = pd.DataFrame(index=index, columns=['totalGDP'] ,data=gdp_total)
 
-
-    GDP = gdp_data.set_index('Country Code')
-    GDP_total = GDP[[str(i) for i in range(projectStartYear,endyear,1)]].sum(axis=1)
-    GDP_total = GDP_total[GDP_total!=0]
-
-    if PPP:
-        gdp = gdp_cia.set_index('Country Code')
-        gdp = gdp.sort_index()
+        gdp_fill = gdp_cia.set_index('Country Code')
+        gdp_fill = gdp_fill.sort_index()
         years = (endyear - projectStartYear)
-        GDP_CIA = ((1+grow_rate) ** years - 1) / grow_rate * gdp['value']
-        GDP_filled = pd.concat([GDP_total, GDP_CIA]).to_frame('totalGDP')
-    else:
-        GDP_filled = GDP_total.to_frame('totalGDP')
 
-    GDP_filled = GDP_filled.reset_index()
-    GDP_filled = GDP_filled.drop_duplicates(subset=['Country Code'], keep='first')
-    GDP_filled.to_csv(save_filename_gdp_total, index=False)
+        r =  (1 + grow_rate) * (1 - discount)
+        if r == 0:
+            gdp_filled = years * gdp_fill['value']
+        else:
+            gdp_filled = (r ** years - 1) / (r - 1) * gdp_fill['value']
+        gdp_filled = gdp_filled.to_frame('totalGDP')
+        allGDP = pd.concat([gdp_total, gdp_filled]).reset_index()
+        allGDP = allGDP.drop_duplicates(subset=['Country Code'], keep='first')
+        allGDP.to_csv('tmpresults/GDP_TOTAL_discount%s.csv'%(discount), index=False)
 
+    pop_psy1 = pop_un[[str(projectStartYear)]].rename(columns={str(projectStartYear):'pop_psy'})
+    pop_psy2 = pop_fill[[str(projectStartYear)]].rename(columns={str(projectStartYear):'pop_psy'})
+    pop_psy = pd.concat([pop_psy1, pop_psy2]).reset_index().drop_duplicates(subset=['Country Code'], keep='first')
 
-    POP = pop_data_total.set_index('Country Code')
-    POP_total = POP[[str(i) for i in range(projectStartYear,endyear,1)]].sum(axis=1)
-    POP_filled = POP_total.to_frame('totalPOP')
-    POP_filled = POP_filled.reset_index()
-    POP_filled.to_csv(save_filename_pop_total, index=False)
+    gdp_psy1 = gdp_data.set_index('Country Code')[str(projectStartYear)].to_frame('gdp_psy')
+    gdp_psy2 = gdp_fill['value'].to_frame('gdp_psy')
+    gdp_psy = pd.concat([gdp_psy1, gdp_psy2], axis=0).reset_index().drop_duplicates(subset=['Country Code'], keep='first')
 
-
-    # In[ ]:
-
-
-    pop_psy = POP.groupby(['Country Code']).sum()[[str(projectStartYear)]]
-    pop_psy = pop_psy.rename(columns={str(projectStartYear):'pop_psy'})
-    pop_psy = pop_psy.reset_index()
-
-    gdp_psy1 = GDP[str(projectStartYear)].to_frame('gdp_psy')
-    gdp_psy1 = gdp_psy1.dropna()
-    gdp_psy2 = gdp['value'].to_frame('gdp_psy')
-    gdp_psy = pd.concat([gdp_psy1, gdp_psy2], axis=0).reset_index()
-    gdp_psy = gdp_psy.drop_duplicates(subset=['Country Code'], keep='first')
-
-    pop_psy.to_csv(save_filename_pop_psy, index=False)
-    gdp_psy.to_csv(save_filename_gdp_psy, index=False)
+    pop_psy.to_csv('tmpresults/POP_PSY.csv', index=False)
+    gdp_psy.to_csv('tmpresults/GDP_PSY.csv', index=False)
 
 
 # ## Part 1. raw estimate for each disease here
@@ -124,7 +131,8 @@ def get_IHME_data(df_IHME, disease, scenario):
         pca_model = PCA(x, standardize=False, demean=True)
         x_input = pca_model.factors.iloc[:, :2] 
     else:
-        x = data[['DALYs (Disability-Adjusted Life Years)']]
+        # x = data[['DALYs (Disability-Adjusted Life Years)']]
+        x = data[['Prevalence']]
         # x = data[['YLLs (Years of Life Lost)', 'Prevalence']]
         x.columns = ['comp_0']
         x_input = x
@@ -192,8 +200,9 @@ def fit_ols_model_pca(data):
     # x11 = x1 * x1
     # x01 = x0 * x1
     # x_input = np.concatenate([x0, x1, x00, x01, x11], axis=1)
+    x_input = x_input.apply(np.log)
     X = sm.add_constant(x_input)#, 'Incidence','DALYs (Disability-Adjusted Life Years)']])
-    ols_model = sm.OLS(data['tax'], X)
+    ols_model = sm.OLS(data['tax'].apply(np.log), X)
     # ols_model = sm.RLM(data['tax'], X, M=sm.robust.norms.HuberT())
     ols_results = ols_model.fit()
     return ols_results
@@ -214,7 +223,8 @@ def get_estimation_result(STATISTICS_DATA, est, ols_results):
     if DoPCA:
         est['tax'] = ols_results.params[0]+ols_results.params[1]*est['comp_0']+ols_results.params[2]*est['comp_1'] +ols_results.params[3]*est['Upper income'] ##+ols_results.params[3]*est['Incidence']+ols_results.params[3]*est['DALYs (Disability-Adjusted Life Years)']
     else:
-        est['tax'] = ols_results.params[0]+ols_results.params[1]*est['comp_0']
+        est['tax'] = ols_results.params[0]+ols_results.params[1]*np.log(est['comp_0'])
+    est['tax'] = np.exp(est['tax'])
     est = est.set_index('Country Code')
     est['GDPloss'] = est['tax']*estdata['totalGDP']
     est['pc_loss'] = est['GDPloss']/(estdata['totalPOP']/(endyear-projectStartYear))
@@ -246,17 +256,17 @@ def Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderM
     with open(summaryfile, 'a+') as f:
         with open(coefficient_file, 'a+') as f2:   
             for i, disease in enumerate(diseases):
-                if (disease == 'Other malignant neoplasms' or disease == 'Neoplasms' or disease == 'Total cancers'):
-                    continue
                 disease = diseases[i]
                 IHMEdata = get_IHME_data(df_IHME, disease, scenario)
                 IHMEdata = IHMEdata.merge(Indicator, on='Country Code')
                 data = get_aggregate_data(df_agg, disease, IHMEdata)
-                data = remove_outlier(data, 'tax')
+                # data = remove_outlier(data, 'tax')
                 ols_results = fit_ols_model_pca(data)
                 print("****************************", file=f)
                 print("****************************", file=f)
                 print("****************************", file=f)
+                print("ConsiderTC, ConsiderMB, informal, discount, scenario", file=f)
+                print(ConsiderTC, ConsiderMB, informal, discount, scenario, file=f)
                 print(i, disease, file=f)
                 print(ols_results.summary(), file=f)
                 est_prepare = get_estimation_prepare(df_agg, disease, IHMEdata)
@@ -288,8 +298,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('-i', '--input', type=str, default='tmpresults/aggregate_results.csv') # or 0
     parser.add_argument('-o', '--output', type=str, default='tmpresults/aggregate_results_imputed.csv') # or 0
-    parser.add_argument('-g', '--gpdfile', type=str, default='data/GDP_TOTAL.csv') # or 'lower', 'upper'
-    parser.add_argument('-p', '--popfile', type=str, default='data/POP_TOTAL.csv') # or 0.02, 0.03
+    parser.add_argument('-g', '--gpdfile', type=str, default='tmpresults/GDP_TOTAL.csv') # or 'lower', 'upper'
+    parser.add_argument('-p', '--popfile', type=str, default='tmpresults/POP_TOTAL.csv') # or 0.02, 0.03
     args = parser.parse_args()
     ## ## MAIN FUNCTION - input
     
@@ -297,14 +307,11 @@ if __name__ == "__main__":
     ## INPUT FILE
     df_result = pd.read_csv(args.input)
     diseases = sorted(df_result['disease'].unique())
-    GDP_filled = pd.read_csv(args.gpdfile).set_index('Country Code')
-    POP_filled = pd.read_csv(args.popfile).set_index('Country Code')
-    STATISTICS_DATA = GDP_filled.merge(POP_filled, on='Country Code')
     countries_info = pd.read_csv('data/dl1_countrycodeorg_country_name.csv')
     code_map = dict(zip(countries_info.country, countries_info['Country Code']))
     df_IHME = pd.read_csv("bigdata/data_diabetes/IHME.csv")
     df_IHME['Country Code'] = df_IHME['location'].apply(lambda x:code_map[x])
-    df_IHME = df_IHME[df_IHME['year']==2019]
+    df_IHME = df_IHME[(df_IHME['year']==2019) & (df_IHME['metric']=='Rate')]
     print(df_result.columns)
 
 
@@ -320,6 +327,10 @@ if __name__ == "__main__":
             for scenario in ['val', 'lower', 'upper']:
                 for informal in [0, 0.05, 0.11, 0.23]:
                     for discount in [0, 0.02, 0.03]:
+                        gdp_file_name = args.gpdfile.strip('.csv') + '_discount%s.csv'%(discount)
+                        GDP_filled = pd.read_csv(gdp_file_name).set_index('Country Code')
+                        POP_filled = pd.read_csv(args.popfile).set_index('Country Code')
+                        STATISTICS_DATA = GDP_filled.merge(POP_filled, on='Country Code')
                         print(ConsiderTC, ConsiderMB, informal, discount, scenario)
                         est_df = Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderMB, informal, discount, scenario)
                         est_pieces.append(est_df)
