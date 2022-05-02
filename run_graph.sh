@@ -12,5 +12,5 @@ python generate_tables.py -f 'results/aggregate_results_imputed.csv' -i 0.23 -d 
 
 ## 
 runipy generate_figures-Choropleth.ipynb
-runipy generate_figures-TC_Choropleth.ipynb
+runipy generate_figures-TC_proportion.ipynb
 runipy generate_figures-informal_proportion.ipynb
