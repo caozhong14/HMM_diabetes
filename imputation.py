@@ -278,10 +278,9 @@ def Process(df_result, df_IHME, diseases, STATISTICS_DATA, ConsiderTC, ConsiderM
                 est['informal'] = informal
                 est['discount'] = discount     
                 pieces.append(est)  
-                print (disease, file=f2)      
-                print(ols_results.params, file=f2)
-                print(ols_results.pvalues, file=f2)
-                print("R-squared    ", ols_results.rsquared, file=f2)
+                print("ConsiderTC, informal, discount, scenario, ols_results.params[0](ols_results.pvalues[0]), ols_results.params[1](ols_results.pvalues[1]), R-squared", file=f2)
+                print(ConsiderTC, informal, discount, scenario, "%s (%.3e)"%(ols_results.params[0],ols_results.pvalues[0]), "%s (%.3e)"%(ols_results.params[1],ols_results.pvalues[1]), ols_results.rsquared, file=f2)
+
 
     df = pd.concat(pieces)
     l2 = len(df)
