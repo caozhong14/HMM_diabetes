@@ -40,6 +40,10 @@ python HMM_main.py -t 0 -m 1 -i 0 -d 0 -s 'val' 2>&1 | tee logs/log_t0m1i0d0v.tx
 python HMM_main.py -t 0 -m 1 -i 0 -d 0 -s 'upper' 2>&1 | tee logs/log_t0m1i0d0u.txt &
 python HMM_main.py -t 0 -m 1 -i 0 -d 0 -s 'lower' 2>&1 | tee logs/log_t0m1i0d0l.txt &
 
+python HMM_main.py -t 0 -m 1 -i 0.0075 -d 0.02 -s 'val' 2>&1 | tee logs/log_t0m1i7d2v.txt &
+python HMM_main.py -t 0 -m 1 -i 0.0075 -d 0.02 -s 'upper' 2>&1 | tee logs/log_t0m1i7d2u.txt &
+python HMM_main.py -t 0 -m 1 -i 0.0075 -d 0.02 -s 'lower' 2>&1 | tee logs/log_t0m1i7d2l.txt &
+
 ## To view the progress of each process, run the following command to 
 ## cat logs/log_t0m1l0.txt | grep "\-" | wc -l # target output, 1
 ## tail logs/log_t0m1l0.txt  # target output, Z**
