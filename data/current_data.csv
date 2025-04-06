@@ -1,0 +1,104 @@
+country,alpha,WBCountry,Country Code
+Armenia,0.366997302,Armenia,ARM
+Argentina,0.567056686,Argentina,ARG
+Austria,0.41143918,Austria,AUT
+Australia,0.431143522,Australia,AUS
+Barbados,0.244915962,Barbados,BRB
+Belgium,0.37017566,Belgium,BEL
+Bulgaria,0.466206312,Bulgaria,BGR
+Bahrain,0.714199215,Bahrain,BHR
+Burundi,0.391356945,Burundi,BDI
+Benin,0.382844985,Benin,BEN
+Brazil,0.442373693,Brazil,BRA
+Botswana,0.722039014,Botswana,BWA
+Canada,0.380882025,Canada,CAN
+Central African Republic,0.83568421,Central African Republic,CAF
+Switzerland,0.345801234,Switzerland,CHE
+Corte d'Ivoire,0.522207588,Cote d'Ivoire,CIV
+Chile,0.552200884,Chile,CHL
+Cameroon,0.497339547,Cameroon,CMR
+China,0.432761371,China,CHN
+Colombia,0.378890097,Colombia,COL
+Costa Rica,0.378934741,Costa Rica,CRI
+Cyprus,0.530319363,Cyprus,CYP
+Czech Republic,0.487599611,Czech Republic,CZE
+Germany,0.3772825,Germany,DEU
+Denmark,0.359604537,Denmark,DNK
+Dominican Republic,0.338139117,Dominican Republic,DOM
+Ecuador,0.548746169,Ecuador,ECU
+Estonia,0.408889771,Estonia,EST
+Egypt,0.622159094,"Egypt, Arab Rep.",EGY
+Spain,0.420388997,Spain,ESP
+Finland,0.389925182,Finland,FIN
+Fiji,0.51137352,Fiji,FJI
+France,0.369996071,France,FRA
+Gabon,0.724604547,Gabon,GAB
+United Kingdom,0.387448668,United Kingdom,GBR
+Greece,0.520346493,Greece,GRC
+Guatemala,0.583630741,Guatemala,GTM
+Honduras,0.381781936,Honduras,HND
+Croatia,0.328327358,Croatia,HRV
+Hungary,0.398519337,Hungary,HUN
+Indonesia,0.543420792,Indonesia,IDN
+Ireland,0.514923483,Ireland,IRL
+Israel,0.463953018,Israel,ISR
+India,0.504574716,India,IND
+Iraq,0.703693688,Iraq,IRQ
+Iceland,0.253631771,Iceland,ISL
+Italy,0.460304856,Italy,ITA
+Jamaica,0.394411921,Jamaica,JAM
+Jordan,0.516547501,Jordan,JOR
+Japan,0.397206962,Japan,JPN
+Kenya,0.572266668,Kenya,KEN
+Kyrgyzstan,0.436984122,Kyrgyz Republic,KGZ
+South Korea,0.48075515,"Korea, Rep.",KOR
+Kuwait,0.754652962,Kuwait,KWT
+Kazakhstan,0.584454685,Kazakhstan,KAZ
+Lesotho,0.380533695,Lesotho,LSO
+Lithuania,0.533936501,Lithuania,LTU
+Luxembourg,0.445994437,Luxembourg,LUX
+Latvia,0.421501815,Latvia,LVA
+Morocco,0.510482877,Morocco,MAR
+Moldova,0.370199263,Moldova,MDA
+Mongolia,0.556961834,Mongolia,MNG
+Macao,0.664653599,"Macao SAR, China",MAC
+Mauritania,0.545837909,Mauritania,MRT
+Malta,0.456100345,Malta,MLT
+Mauritius,0.5792045,Mauritius,MUS
+Mexico,0.613959968,Mexico,MEX
+Malaysia,0.468656301,Malaysia,MYS
+Mozambique,0.573306948,Mozambique,MOZ
+Namibia,0.495945811,Namibia,NAM
+Niger,0.561387777,Niger,NER
+Netherlands,0.40441215,Netherlands,NLD
+Norway,0.466385901,Norway,NOR
+Panama,0.618019938,Panama,PAN
+Peru,0.693436861,Peru,PER
+Philippines,0.643274128,Philippines,PHL
+Poland,0.436884105,Poland,POL
+Portugal,0.419235706,Portugal,PRT
+Paraguay,0.435112357,Paraguay,PRY
+Qatar,0.806969404,Qatar,QAT
+Romania,0.54332152,Romania,ROU
+Serbia,0.406564713,Serbia,SRB
+Russia,0.342852056,Russian Federation,RUS
+Rwanda,0.229022145,Rwanda,RWA
+Saudi Arabia,0.720382124,Saudi Arabia,SAU
+Sudan,0.40807724,Sudan,SDN
+Sweden,0.434427619,Sweden,SWE
+Singapore,0.560525745,Singapore,SGP
+Slovenia,0.334382713,Slovenia,SVN
+Slovakia,0.453148723,Slovak Republic,SVK
+Sierra Leone,0.483555436,Sierra Leone,SLE
+Senegal,0.599148154,Senegal,SEN
+Togo,0.148031473,Togo,TGO
+Thailand,0.607129812,Thailand,THA
+Tajikistan,0.62033546,Tajikistan,TJK
+Tunisia,0.498322845,Tunisia,TUN
+Turkey,0.562850177,Turkey,TUR
+Trinidad and Tobago,0.665075213,Trinidad and Tobago,TTO
+Ukraine,0.441631138,Ukraine,UKR
+USA,0.396402538,United States,USA
+Uruguay,0.525854319,Uruguay,URY
+South Africa,0.44772929,South Africa,ZAF
+Zimbabwe,0.444203973,Zimbabwe,ZWE

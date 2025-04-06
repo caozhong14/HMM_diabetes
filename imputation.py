@@ -63,9 +63,9 @@ else:
     pop_total = pop_un[[str(i) for i in range(projectStartYear,endyear,1)]].sum(axis=1).to_frame('totalPOP')
     pop_fill = pop_data_total.set_index('Country Code')
     pop_filled = pop_fill[[str(i) for i in range(projectStartYear,endyear,1)]].sum(axis=1).to_frame('totalPOP')
-    allPDP = pd.concat([pop_total, pop_filled]).reset_index()
-    allPDP = allPDP.drop_duplicates(subset=['Country Code'], keep='first')
-    allPDP.to_csv('tmpresults/POP_TOTAL.csv', index=False)
+    allPOP = pd.concat([pop_total, pop_filled]).reset_index()
+    allPOP = allPOP.drop_duplicates(subset=['Country Code'], keep='first')
+    allPOP.to_csv('tmpresults/POP_TOTAL.csv', index=False)
 
     for discount in [0, 0.02, 0.03]:
         DiscountRate = []

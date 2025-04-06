@@ -1,14 +1,10 @@
-/home/caozhong/HMM_diabetes/HMM_main.py:239: RuntimeWarning: divide by zero encountered in true_divide
+HMM_main.py:241: RuntimeWarning: divide by zero encountered in true_divide
   informal_care_labor_ratio = informal_care_labor/total_labor
-/home/caozhong/HMM_diabetes/HMM_main.py:239: RuntimeWarning: invalid value encountered in true_divide
+HMM_main.py:241: RuntimeWarning: invalid value encountered in true_divide
   informal_care_labor_ratio = informal_care_labor/total_labor
-/home/caozhong/HMM_diabetes/HMM_main.py:240: RuntimeWarning: invalid value encountered in multiply
+HMM_main.py:242: RuntimeWarning: invalid value encountered in multiply
   informal_care_labor_loss = informal_care_labor_ratio * labor_SQ.sum(axis = 0).values
-/home/caozhong/HMM_diabetes/HMM_main.py:252: RuntimeWarning: divide by zero encountered in true_divide
-  Scalings = np.divide(GDP_SQ, Y)
-/home/caozhong/HMM_diabetes/HMM_main.py:239: RuntimeWarning: invalid value encountered in true_divide
-  informal_care_labor_ratio = informal_care_labor/total_labor
-/home/caozhong/HMM_diabetes/HMM_main.py:252: RuntimeWarning: divide by zero encountered in true_divide
+HMM_main.py:254: RuntimeWarning: divide by zero encountered in true_divide
   Scalings = np.divide(GDP_SQ, Y)
 Countries 204 Diseases 1
 Diabetes mellitus ----------------------

@@ -1,0 +1,274 @@
+HMM_main.py:241: RuntimeWarning: divide by zero encountered in true_divide
+  informal_care_labor_ratio = informal_care_labor/total_labor
+HMM_main.py:241: RuntimeWarning: invalid value encountered in true_divide
+  informal_care_labor_ratio = informal_care_labor/total_labor
+HMM_main.py:242: RuntimeWarning: invalid value encountered in multiply
+  informal_care_labor_loss = informal_care_labor_ratio * labor_SQ.sum(axis = 0).values
+HMM_main.py:254: RuntimeWarning: divide by zero encountered in true_divide
+  Scalings = np.divide(GDP_SQ, Y)
+Countries 204 Diseases 1
+Diabetes mellitus ----------------------
+AFG
+failed AFG: scenario:val, TC:1, MB1
+AGO
+ALB
+AND
+failed AND: scenario:val, TC:1, MB1
+ARE
+failed ARE: scenario:val, TC:1, MB1
+ARG
+ARM
+ASM
+failed ASM: scenario:val, TC:1, MB1
+ATG
+AUS
+AUT
+AZE
+BDI
+BEL
+BEN
+BFA
+BGD
+BGR
+BHR
+BHS
+BIH
+BLR
+BLZ
+BMU
+failed BMU: scenario:val, TC:1, MB1
+BOL
+BRA
+BRB
+BRN
+BTN
+BWA
+CAF
+failed CAF: scenario:val, TC:1, MB1
+CAN
+CHE
+CHL
+CHN
+CIV
+CMR
+COD
+COG
+COK
+failed COK: scenario:val, TC:1, MB1
+COL
+COM
+CPV
+CRI
+CUB
+failed CUB: scenario:val, TC:1, MB1
+CYP
+CZE
+DEU
+DJI
+DMA
+failed DMA: scenario:val, TC:1, MB1
+DNK
+DOM
+DZA
+failed DZA: scenario:val, TC:1, MB1
+ECU
+EGY
+failed EGY: scenario:val, TC:1, MB1
+ERI
+failed ERI: scenario:val, TC:1, MB1
+ESP
+EST
+ETH
+FIN
+FJI
+FRA
+FSM
+failed FSM: scenario:val, TC:1, MB1
+GAB
+GBR
+GEO
+GHA
+GIN
+GMB
+GNB
+GNQ
+failed GNQ: scenario:val, TC:1, MB1
+GRC
+GRD
+failed GRD: scenario:val, TC:1, MB1
+GRL
+failed GRL: scenario:val, TC:1, MB1
+GTM
+GUM
+failed GUM: scenario:val, TC:1, MB1
+GUY
+failed GUY: scenario:val, TC:1, MB1
+HND
+HRV
+HTI
+failed HTI: scenario:val, TC:1, MB1
+HUN
+IDN
+IND
+IRL
+IRN
+failed IRN: scenario:val, TC:1, MB1
+IRQ
+ISL
+ISR
+ITA
+JAM
+JOR
+JPN
+KAZ
+KEN
+KGZ
+KHM
+KIR
+failed KIR: scenario:val, TC:1, MB1
+KNA
+failed KNA: scenario:val, TC:1, MB1
+KOR
+KWT
+LAO
+LBN
+LBR
+failed LBR: scenario:val, TC:1, MB1
+LBY
+failed LBY: scenario:val, TC:1, MB1
+LCA
+failed LCA: scenario:val, TC:1, MB1
+LKA
+LSO
+LTU
+LUX
+LVA
+MAR
+MCO
+failed MCO: scenario:val, TC:1, MB1
+MDA
+MDG
+MDV
+MEX
+MHL
+failed MHL: scenario:val, TC:1, MB1
+MKD
+MLI
+MLT
+MMR
+failed MMR: scenario:val, TC:1, MB1
+MNE
+failed MNE: scenario:val, TC:1, MB1
+MNG
+MNP
+failed MNP: scenario:val, TC:1, MB1
+MOZ
+MRT
+MUS
+MWI
+failed MWI: scenario:val, TC:1, MB1
+MYS
+NAM
+NER
+NGA
+NIC
+failed NIC: scenario:val, TC:1, MB1
+NIU
+failed NIU: scenario:val, TC:1, MB1
+NLD
+NOR
+NPL
+NRU
+failed NRU: scenario:val, TC:1, MB1
+NZL
+OMN
+PAK
+PAN
+PER
+PHL
+PLW
+failed PLW: scenario:val, TC:1, MB1
+PNG
+failed PNG: scenario:val, TC:1, MB1
+POL
+PRI
+failed PRI: scenario:val, TC:1, MB1
+PRK
+failed PRK: scenario:val, TC:1, MB1
+PRT
+PRY
+PSE
+failed PSE: scenario:val, TC:1, MB1
+QAT
+ROU
+RUS
+RWA
+SAU
+SDN
+SEN
+SGP
+SLB
+failed SLB: scenario:val, TC:1, MB1
+SLE
+SLV
+SMR
+failed SMR: scenario:val, TC:1, MB1
+SOM
+failed SOM: scenario:val, TC:1, MB1
+SRB
+SSD
+failed SSD: scenario:val, TC:1, MB1
+STP
+failed STP: scenario:val, TC:1, MB1
+SUR
+SVK
+SVN
+SWE
+SWZ
+SYC
+failed SYC: scenario:val, TC:1, MB1
+SYR
+failed SYR: scenario:val, TC:1, MB1
+TCD
+failed TCD: scenario:val, TC:1, MB1
+TGO
+THA
+TJK
+TKL
+failed TKL: scenario:val, TC:1, MB1
+TKM
+failed TKM: scenario:val, TC:1, MB1
+TLS
+failed TLS: scenario:val, TC:1, MB1
+TON
+failed TON: scenario:val, TC:1, MB1
+TTO
+failed TTO: scenario:val, TC:1, MB1
+TUN
+TUR
+TUV
+failed TUV: scenario:val, TC:1, MB1
+TWN
+failed TWN: scenario:val, TC:1, MB1
+TZA
+UGA
+UKR
+URY
+USA
+UZB
+VCT
+failed VCT: scenario:val, TC:1, MB1
+VEN
+failed VEN: scenario:val, TC:1, MB1
+VIR
+failed VIR: scenario:val, TC:1, MB1
+VNM
+VUT
+failed VUT: scenario:val, TC:1, MB1
+WSM
+failed WSM: scenario:val, TC:1, MB1
+YEM
+failed YEM: scenario:val, TC:1, MB1
+ZAF
+ZMB
+ZWE

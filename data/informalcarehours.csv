@@ -1,0 +1,57 @@
+disease,val,lower,upper
+"Cardiovascular diseases",1.12,0.95,1.42
+"Rheumatic heart disease",1.12,0.95,1.42
+"Ischemic heart disease",0.10,0.04,0.17
+"Stroke",6.12,5.79,6.44
+"Hypertensive heart disease",0.31,0.30,0.32
+"Non-rheumatic valvular heart disease",1.95,1.91,2.00
+"Cardiomyopathy and myocarditis",1.12,0.95,1.42
+"Atrial fibrillation and flutter",1.12,0.95,1.42
+"Aortic aneurysm",1.12,0.95,1.42
+"Peripheral artery disease",1.12,0.95,1.42
+"Endocarditis",1.12,0.95,1.42
+"Other cardiovascular and circulatory diseases",0.98,0.92,1.04
+"Mental disorders",1.185,0.474,3.555
+"Schizophrenia",1.185,0.474,3.555
+"Depressive disorders",1.185,0.474,3.555
+"Bipolar disorder",1.185,0.474,3.555
+"Anxiety disorders",1.185,0.474,3.555
+"Eating disorders",1.185,0.474,3.555
+"Autism spectrum disorders",1.185,0.474,3.555
+"Attention-deficit/hyperactivity disorder",1.185,0.474,3.555
+"Conduct disorder",1.185,0.474,3.555
+"Idiopathic developmental intellectual disability",1.185,0.474,3.555
+"Other mental disorders",1.185,0.474,3.555
+"Diabetes mellitus",4.0,1.9,8.3
+"Chronic obstructive pulmonary disease",5.25,5.1,5.35
+"Neoplasms",22.471,9.846,35.096
+"Lip and oral cavity cancer",16.865,15.865,17.904
+"Nasopharynx cancer",22.471,9.846,35.096 
+"Other pharynx cancer",22.471,9.846,35.096 
+"Esophageal cancer",27.615,26.596,28.635
+"Stomach cancer",35.096,34.038,36.077
+"Colon and rectum cancer",22.471,9.846,35.096 
+"Liver cancer",22.471,9.846,35.096 
+"Gallbladder and biliary tract cancer",22.471,9.846,35.096 
+"Pancreatic cancer",35.096,34.038,36.077
+"Larynx cancer",15.462,14.462,16.500
+"Tracheal, bronchus, and lung cancer",24.808,23.788,25.827
+"Malignant skin melanoma",22.471,9.846,35.096 
+"Non-melanoma skin cancer",22.471,9.846,35.096 
+"Breast cancer",22.471,9.846,35.096 
+"Cervical cancer",22.471,9.846,35.096 
+"Uterine cancer",22.471,9.846,35.096 
+"Ovarian cancer",22.471,9.846,35.096 
+"Prostate cancer",22.471,9.846,35.096 
+"Testicular cancer",22.471,9.846,35.096 
+"Kidney cancer",13.577,12.558,14.596
+"Bladder cancer",23.115,22.115,24.154
+"Brain and central nervous system cancer",22.471,9.846,35.096 
+"Thyroid cancer",22.471,9.846,35.096 
+"Mesothelioma",22.471,9.846,35.096 
+"Hodgkin lymphoma",22.471,9.846,35.096 
+"Non-Hodgkin lymphoma",22.471,9.846,35.096 
+"Multiple myeloma",22.471,9.846,35.096 
+"Leukemia",9.846,8.846,10.885
+"Other neoplasms",22.471,9.846,35.096
+"Alzheimer's disease and other dementias",5,3.6,7.2

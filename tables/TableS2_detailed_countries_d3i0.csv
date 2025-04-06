@@ -1,0 +1,205 @@
+Region,WBCountry,Economic cost in millions of 2017 INT$,Percentage of total GDP in 2020-2050,Per capita loss in 2017 INT $
+East Asia & Pacific,American Samoa*,91(67-124),0.451(0.333-0.616),"1,668(1,233-2,276)"
+East Asia & Pacific,Australia,"58,943(46,914-74,593)",0.169(0.134-0.214),"2,011(1,600-2,544)"
+East Asia & Pacific,Brunei Darussalam,"1,971(1,291-2,886)",0.301(0.197-0.441),"4,142(2,713-6,065)"
+East Asia & Pacific,Cambodia,"6,644(4,401-9,804)",0.199(0.132-0.293),340(225-501)
+East Asia & Pacific,China,"1,301,555(1,021,875-1,663,019)",0.156(0.123-0.200),"900(706-1,149)"
+East Asia & Pacific,Fiji,"1,699(1,038-2,697)",0.614(0.375-0.974),"1,711(1,045-2,717)"
+East Asia & Pacific,Guam*,422(302-585),0.238(0.170-0.330),"2,291(1,639-3,177)"
+East Asia & Pacific,Indonesia,"368,837(248,951-526,881)",0.300(0.202-0.428),"1,201(811-1,716)"
+East Asia & Pacific,Japan,"207,237(163,366-261,047)",0.185(0.146-0.233),"1,774(1,398-2,235)"
+East Asia & Pacific,Kiribati*,39(27-54),0.524(0.368-0.726),262(184-363)
+East Asia & Pacific,"Korea, Dem. People's Rep.*","1,840(1,309-2,567)",0.150(0.107-0.210),69(49-97)
+East Asia & Pacific,"Korea, Rep.","148,095(116,936-191,100)",0.235(0.186-0.304),"2,957(2,335-3,816)"
+East Asia & Pacific,Lao PDR,"4,056(2,397-6,382)",0.174(0.103-0.274),475(281-747)
+East Asia & Pacific,Malaysia,"49,090(33,064-71,705)",0.159(0.107-0.232),"1,321(890-1,930)"
+East Asia & Pacific,Marshall Islands*,28(19-39),0.436(0.301-0.616),409(283-577)
+East Asia & Pacific,"Micronesia, Fed. Sts.*",52(30-81),0.569(0.335-0.887),399(235-622)
+East Asia & Pacific,Mongolia,"922(618-1,361)",0.067(0.045-0.099),237(159-350)
+East Asia & Pacific,Myanmar*,"20,308(16,499-26,003)",0.231(0.188-0.296),342(278-438)
+East Asia & Pacific,Nauru*,12(8-19),0.339(0.230-0.517),"1,141(772-1,739)"
+East Asia & Pacific,New Zealand,"11,243(8,630-14,377)",0.173(0.132-0.221),"2,130(1,635-2,724)"
+East Asia & Pacific,Northern Mariana Islands*,133(97-181),0.351(0.256-0.477),"2,171(1,584-2,953)"
+East Asia & Pacific,Palau*,41(29-56),0.667(0.472-0.916),"2,249(1,594-3,092)"
+East Asia & Pacific,Papua New Guinea*,"3,389(2,441-4,744)",0.296(0.213-0.414),292(211-409)
+East Asia & Pacific,Philippines,"78,583(54,006-106,929)",0.202(0.139-0.274),610(419-829)
+East Asia & Pacific,Samoa*,102(73-142),0.304(0.218-0.421),441(316-611)
+East Asia & Pacific,Singapore,"26,360(21,213-34,163)",0.166(0.133-0.215),"4,191(3,373-5,431)"
+East Asia & Pacific,Solomon Islands*,201(149-269),0.433(0.322-0.579),207(154-277)
+East Asia & Pacific,Taiwan (Province of China)*,"81,108(56,711-118,309)",0.232(0.162-0.338),"3,436(2,402-5,012)"
+East Asia & Pacific,Thailand,"54,196(37,808-76,242)",0.154(0.107-0.216),"783(547-1,102)"
+East Asia & Pacific,Timor-Leste*,181(124-253),0.154(0.105-0.215),107(74-150)
+East Asia & Pacific,Tonga*,64(46-88),0.368(0.265-0.508),531(382-734)
+East Asia & Pacific,Tuvalu*,10(7-14),0.451(0.309-0.640),"710(487-1,008)"
+East Asia & Pacific,Vanuatu*,74(52-103),0.293(0.207-0.410),173(122-242)
+East Asia & Pacific,Vietnam,"96,384(60,901-144,938)",0.231(0.146-0.347),"916(578-1,377)"
+Europe & Central Asia,Albania,"1,300(844-1,915)",0.114(0.074-0.168),482(313-711)
+Europe & Central Asia,Andorra*,157(112-217),0.154(0.110-0.213),"2,024(1,449-2,796)"
+Europe & Central Asia,Armenia,"3,008(2,282-3,967)",0.236(0.179-0.311),"1,029(781-1,357)"
+Europe & Central Asia,Austria,"16,292(13,192-20,407)",0.141(0.114-0.177),"1,779(1,440-2,228)"
+Europe & Central Asia,Azerbaijan,"5,343(3,597-7,899)",0.163(0.110-0.241),494(332-730)
+Europe & Central Asia,Belarus,"2,595(1,835-3,687)",0.071(0.050-0.101),286(202-406)
+Europe & Central Asia,Belgium,"20,594(16,038-27,043)",0.149(0.116-0.196),"1,718(1,338-2,257)"
+Europe & Central Asia,Bosnia and Herzegovina,"4,213(2,981-5,921)",0.298(0.211-0.419),"1,398(989-1,965)"
+Europe & Central Asia,Bulgaria,"15,932(11,408-22,307)",0.344(0.246-0.482),"2,590(1,855-3,626)"
+Europe & Central Asia,Croatia,"5,733(4,114-8,039)",0.175(0.126-0.246),"1,530(1,098-2,145)"
+Europe & Central Asia,Cyprus,"1,959(1,622-2,412)",0.162(0.134-0.199),"1,513(1,253-1,863)"
+Europe & Central Asia,Czech Republic,"61,907(46,969-81,624)",0.497(0.377-0.655),"5,802(4,402-7,649)"
+Europe & Central Asia,Denmark,"14,264(11,174-18,273)",0.163(0.128-0.209),"2,355(1,845-3,017)"
+Europe & Central Asia,Estonia,"3,093(2,285-4,233)",0.208(0.153-0.284),"2,479(1,831-3,392)"
+Europe & Central Asia,Finland,"13,348(10,630-16,868)",0.207(0.165-0.262),"2,404(1,915-3,038)"
+Europe & Central Asia,France,"70,039(53,942-91,034)",0.102(0.078-0.132),"1,046(806-1,360)"
+Europe & Central Asia,Georgia,"2,200(1,691-2,875)",0.119(0.091-0.155),584(449-763)
+Europe & Central Asia,Germany,"391,795(303,019-503,099)",0.378(0.293-0.486),"4,754(3,677-6,105)"
+Europe & Central Asia,Greece,"6,590(4,862-8,898)",0.098(0.072-0.132),678(500-916)
+Europe & Central Asia,Greenland*,107(76-150),0.145(0.103-0.203),"1,914(1,364-2,675)"
+Europe & Central Asia,Hungary,"23,296(16,826-32,126)",0.236(0.170-0.325),"2,558(1,848-3,528)"
+Europe & Central Asia,Iceland,"928(655-1,296)",0.157(0.111-0.220),"2,552(1,801-3,563)"
+Europe & Central Asia,Ireland,"77,540(62,383-98,081)",0.245(0.197-0.309),"14,481(11,651-18,318)"
+Europe & Central Asia,Italy,"83,405(66,664-104,978)",0.160(0.128-0.201),"1,440(1,151-1,812)"
+Europe & Central Asia,Kazakhstan,"21,049(15,372-28,733)",0.149(0.108-0.203),"980(715-1,337)"
+Europe & Central Asia,Kyrgyz Republic,"1,286(893-1,817)",0.133(0.092-0.187),164(114-231)
+Europe & Central Asia,Latvia,"2,934(2,053-4,222)",0.175(0.123-0.252),"1,768(1,237-2,543)"
+Europe & Central Asia,Lithuania,"4,677(3,648-6,081)",0.146(0.114-0.190),"1,954(1,524-2,541)"
+Europe & Central Asia,Luxembourg,"2,543(1,928-3,386)",0.124(0.094-0.166),"3,556(2,696-4,735)"
+Europe & Central Asia,Moldova,"1,506(1,094-2,077)",0.145(0.105-0.200),402(292-555)
+Europe & Central Asia,Monaco*,407(292-552),0.173(0.125-0.235),"9,512(6,834-12,889)"
+Europe & Central Asia,Montenegro,"997(685-1,427)",0.290(0.199-0.415),"1,622(1,115-2,322)"
+Europe & Central Asia,Netherlands,"42,629(33,830-54,113)",0.172(0.136-0.218),"2,454(1,948-3,116)"
+Europe & Central Asia,North Macedonia,"2,222(1,495-3,277)",0.236(0.159-0.348),"1,112(748-1,640)"
+Europe & Central Asia,Norway,"18,119(15,185-21,681)",0.207(0.174-0.248),"2,992(2,508-3,581)"
+Europe & Central Asia,Poland,"112,217(84,997-148,686)",0.270(0.204-0.357),"3,120(2,363-4,134)"
+Europe & Central Asia,Portugal,"12,910(10,185-16,617)",0.150(0.118-0.193),"1,330(1,049-1,712)"
+Europe & Central Asia,Romania*,"33,433(24,250-46,189)",0.175(0.127-0.242),"1,880(1,363-2,597)"
+Europe & Central Asia,Russian Federation,"70,432(51,390-93,237)",0.088(0.064-0.116),499(364-661)
+Europe & Central Asia,San Marino*,82(59-114),0.168(0.119-0.231),"2,406(1,715-3,325)"
+Europe & Central Asia,Serbia,"12,499(8,985-17,828)",0.305(0.219-0.435),"1,572(1,130-2,242)"
+Europe & Central Asia,Slovak Republic,"12,271(8,703-17,429)",0.248(0.176-0.352),"2,322(1,647-3,298)"
+Europe & Central Asia,Slovenia,"3,972(2,954-5,327)",0.163(0.121-0.219),"1,961(1,459-2,630)"
+Europe & Central Asia,Spain,"86,066(67,486-112,568)",0.189(0.148-0.247),"1,888(1,480-2,469)"
+Europe & Central Asia,Sweden,"27,096(22,895-32,286)",0.186(0.157-0.222),"2,509(2,120-2,990)"
+Europe & Central Asia,Switzerland,"31,423(24,230-41,008)",0.210(0.162-0.275),"3,368(2,597-4,395)"
+Europe & Central Asia,Tajikistan,"4,598(3,184-6,281)",0.274(0.190-0.375),360(250-492)
+Europe & Central Asia,Turkey,"86,681(65,515-116,405)",0.100(0.076-0.135),"948(717-1,273)"
+Europe & Central Asia,Turkmenistan*,"3,837(2,575-5,486)",0.174(0.117-0.249),543(364-776)
+Europe & Central Asia,Ukraine,"993(665-1,410)",0.036(0.024-0.051),25(17-36)
+Europe & Central Asia,United Kingdom,"189,641(148,131-241,809)",0.264(0.206-0.337),"2,658(2,076-3,389)"
+Europe & Central Asia,Uzbekistan,"32,329(20,731-47,576)",0.295(0.189-0.434),"833(534-1,226)"
+Latin America & Caribbean,Antigua and Barbuda*,169(129-223),0.329(0.251-0.433),"1,594(1,216-2,099)"
+Latin America & Caribbean,Argentina,"30,867(24,825-38,638)",0.154(0.124-0.193),611(492-765)
+Latin America & Caribbean,"Bahamas, The","900(589-1,312)",0.319(0.209-0.465),"2,066(1,353-3,011)"
+Latin America & Caribbean,Barbados,370(234-550),0.443(0.280-0.658),"1,292(816-1,921)"
+Latin America & Caribbean,Belize,195(134-275),0.334(0.229-0.471),395(272-557)
+Latin America & Caribbean,Bolivia,"5,467(3,546-8,006)",0.192(0.125-0.281),394(255-576)
+Latin America & Caribbean,Brazil,"80,147(66,920-95,493)",0.125(0.105-0.149),356(298-425)
+Latin America & Caribbean,Chile,"23,758(19,344-29,671)",0.202(0.164-0.252),"1,200(977-1,499)"
+Latin America & Caribbean,Colombia,"43,661(31,438-61,099)",0.216(0.156-0.302),"807(581-1,129)"
+Latin America & Caribbean,Costa Rica,"7,846(5,583-10,914)",0.249(0.177-0.347),"1,416(1,008-1,970)"
+Latin America & Caribbean,Cuba*,"10,803(7,810-14,755)",0.258(0.186-0.352),"991(717-1,354)"
+Latin America & Caribbean,Dominica*,73(53-100),0.406(0.292-0.557),"1,008(726-1,385)"
+Latin America & Caribbean,Dominican Republic,"26,336(15,154-42,407)",0.329(0.189-0.529),"2,191(1,261-3,528)"
+Latin America & Caribbean,Ecuador,"6,056(4,616-8,139)",0.145(0.110-0.195),292(223-393)
+Latin America & Caribbean,El Salvador,"3,448(2,014-5,583)",0.246(0.144-0.399),506(296-819)
+Latin America & Caribbean,Grenada*,177(137-227),0.373(0.289-0.480),"1,529(1,185-1,967)"
+Latin America & Caribbean,Guatemala,"10,649(7,511-14,970)",0.231(0.163-0.325),470(332-661)
+Latin America & Caribbean,Guyana*,"5,166(3,479-7,578)",0.376(0.253-0.552),"6,285(4,233-9,220)"
+Latin America & Caribbean,Haiti*,"1,724(1,186-2,521)",0.228(0.157-0.333),130(89-190)
+Latin America & Caribbean,Honduras,"3,221(2,254-4,613)",0.194(0.136-0.278),267(187-383)
+Latin America & Caribbean,Jamaica,"2,178(1,343-3,260)",0.368(0.227-0.551),"721(444-1,079)"
+Latin America & Caribbean,Mexico,"184,503(138,948-237,925)",0.325(0.245-0.419),"1,278(962-1,647)"
+Latin America & Caribbean,Nicaragua*,"1,982(1,408-2,823)",0.208(0.148-0.296),258(183-368)
+Latin America & Caribbean,Panama,"11,442(8,601-15,284)",0.298(0.224-0.398),"2,219(1,668-2,963)"
+Latin America & Caribbean,Paraguay,"5,729(3,802-8,420)",0.217(0.144-0.319),"696(462-1,022)"
+Latin America & Caribbean,Peru,"11,205(8,095-15,864)",0.103(0.074-0.145),302(218-427)
+Latin America & Caribbean,Puerto Rico*,"7,598(5,379-10,897)",0.387(0.274-0.554),"2,763(1,956-3,963)"
+Latin America & Caribbean,St. Kitts and Nevis*,111(81-150),0.338(0.246-0.458),"1,986(1,442-2,689)"
+Latin America & Caribbean,St. Lucia*,237(181-317),0.444(0.339-0.593),"1,269(969-1,694)"
+Latin America & Caribbean,St. Vincent and the Grenadines*,174(134-226),0.479(0.369-0.620),"1,554(1,200-2,014)"
+Latin America & Caribbean,Suriname,553(383-783),0.320(0.221-0.452),"859(595-1,215)"
+Latin America & Caribbean,Trinidad and Tobago*,"3,957(2,361-5,890)",0.623(0.372-0.928),"2,838(1,693-4,224)"
+Latin America & Caribbean,Uruguay,"1,875(1,475-2,394)",0.104(0.082-0.133),523(411-668)
+Latin America & Caribbean,"Venezuela, RB*","22,417(14,025-33,462)",0.272(0.170-0.407),657(411-980)
+Latin America & Caribbean,Virgin Islands (U.S.)*,497(359-676),0.420(0.303-0.570),"5,132(3,701-6,969)"
+Middle East & North Africa,Algeria*,"20,623(14,618-28,379)",0.173(0.123-0.238),390(277-537)
+Middle East & North Africa,Bahrain,"4,074(3,289-5,131)",0.206(0.166-0.259),"1,960(1,582-2,468)"
+Middle East & North Africa,Djibouti,321(185-508),0.123(0.071-0.196),277(160-438)
+Middle East & North Africa,"Egypt, Arab Rep.","89,150(61,686-128,399)",0.180(0.124-0.259),682(472-982)
+Middle East & North Africa,"Iran, Islamic Rep.*","52,462(39,408-66,360)",0.191(0.143-0.241),552(415-698)
+Middle East & North Africa,Iraq,"18,978(15,004-24,142)",0.161(0.127-0.204),342(271-435)
+Middle East & North Africa,Israel,"24,726(18,699-32,918)",0.204(0.154-0.272),"2,318(1,753-3,086)"
+Middle East & North Africa,Jordan,"2,862(2,101-4,023)",0.105(0.077-0.148),252(185-354)
+Middle East & North Africa,Kuwait,"9,959(8,530-11,912)",0.232(0.198-0.277),"2,025(1,734-2,422)"
+Middle East & North Africa,Lebanon,309(183-477),0.075(0.044-0.115),48(29-75)
+Middle East & North Africa,Libya*,"15,273(10,309-22,149)",0.187(0.127-0.272),"1,950(1,317-2,828)"
+Middle East & North Africa,Malta,"2,828(2,364-3,471)",0.314(0.263-0.386),"6,404(5,354-7,860)"
+Middle East & North Africa,Morocco,"10,501(7,990-14,235)",0.137(0.104-0.186),249(189-337)
+Middle East & North Africa,Oman,"7,350(4,702-10,894)",0.182(0.116-0.269),"1,197(766-1,775)"
+Middle East & North Africa,Qatar,"8,734(7,245-10,831)",0.140(0.116-0.174),"2,534(2,102-3,142)"
+Middle East & North Africa,Saudi Arabia,"85,565(70,987-105,716)",0.208(0.173-0.257),"2,109(1,750-2,606)"
+Middle East & North Africa,Syrian Arab Republic*,"2,589(1,789-3,748)",0.168(0.116-0.244),94(65-136)
+Middle East & North Africa,Tunisia,"5,363(4,150-6,922)",0.187(0.145-0.241),413(319-533)
+Middle East & North Africa,United Arab Emirates*,"31,363(20,646-46,714)",0.172(0.113-0.255),"2,986(1,966-4,447)"
+Middle East & North Africa,"Yemen, Rep.*","2,396(1,622-3,478)",0.106(0.072-0.154),61(41-88)
+North America,Bermuda*,400(297-541),0.250(0.185-0.338),"6,812(5,056-9,226)"
+North America,Canada,"72,820(56,324-93,797)",0.164(0.127-0.211),"1,733(1,340-2,232)"
+North America,United States,"2,060,116(1,765,780-2,412,768)",0.386(0.331-0.452),"5,766(4,942-6,753)"
+South Asia,Afghanistan*,"2,253(1,433-3,305)",0.145(0.092-0.213),43(27-63)
+South Asia,Bangladesh,"54,722(34,019-84,654)",0.121(0.075-0.187),300(187-464)
+South Asia,Bhutan,534(321-838),0.170(0.102-0.267),623(374-978)
+South Asia,India,"808,636(569,291-1,112,547)",0.193(0.136-0.266),526(370-724)
+South Asia,Maldives,348(241-500),0.126(0.087-0.180),638(441-915)
+South Asia,Nepal,"6,886(4,654-9,920)",0.155(0.105-0.223),205(138-295)
+South Asia,Pakistan,"72,760(46,842-107,202)",0.196(0.126-0.289),258(166-381)
+South Asia,Sri Lanka,"30,278(17,881-51,258)",0.365(0.215-0.617),"1,378(814-2,333)"
+Sub-Saharan Africa,Angola,"4,331(2,553-6,838)",0.100(0.059-0.158),82(48-129)
+Sub-Saharan Africa,Benin,"1,440(863-2,303)",0.083(0.050-0.132),81(48-129)
+Sub-Saharan Africa,Botswana,"1,561(1,167-2,104)",0.149(0.111-0.200),527(394-711)
+Sub-Saharan Africa,Burkina Faso,"2,448(1,545-3,645)",0.124(0.078-0.184),78(49-116)
+Sub-Saharan Africa,Burundi,150(98-225),0.068(0.044-0.101),8(5-12)
+Sub-Saharan Africa,Cabo Verde,119(80-172),0.111(0.075-0.162),189(127-274)
+Sub-Saharan Africa,Cameroon,"3,253(1,965-5,238)",0.092(0.055-0.148),86(52-138)
+Sub-Saharan Africa,Central African Republic*,222(156-320),0.146(0.102-0.210),34(24-49)
+Sub-Saharan Africa,Chad*,576(396-826),0.101(0.069-0.144),23(16-33)
+Sub-Saharan Africa,Comoros,86(49-136),0.108(0.062-0.172),74(42-117)
+Sub-Saharan Africa,"Congo, Dem. Rep.","5,174(3,192-7,965)",0.126(0.077-0.193),37(23-57)
+Sub-Saharan Africa,"Congo, Rep.",379(226-602),0.121(0.073-0.193),48(28-76)
+Sub-Saharan Africa,Cote d'Ivoire,"5,383(3,340-8,252)",0.073(0.045-0.112),141(88-216)
+Sub-Saharan Africa,Equatorial Guinea*,383(262-547),0.133(0.091-0.190),181(124-259)
+Sub-Saharan Africa,Eritrea*,371(255-538),0.125(0.086-0.181),79(54-114)
+Sub-Saharan Africa,Eswatini,367(219-568),0.144(0.086-0.223),260(155-402)
+Sub-Saharan Africa,Ethiopia,"12,135(7,982-17,905)",0.069(0.045-0.102),76(50-112)
+Sub-Saharan Africa,Gabon,"1,045(718-1,536)",0.118(0.081-0.174),347(239-510)
+Sub-Saharan Africa,"Gambia, The",167(101-267),0.079(0.048-0.127),46(28-74)
+Sub-Saharan Africa,Ghana,"10,304(6,226-16,481)",0.148(0.090-0.237),249(150-398)
+Sub-Saharan Africa,Guinea,"1,696(1,025-2,681)",0.091(0.055-0.144),88(53-139)
+Sub-Saharan Africa,Guinea-Bissau,161(104-241),0.116(0.075-0.173),59(38-88)
+Sub-Saharan Africa,Kenya,"6,433(4,526-8,965)",0.069(0.048-0.096),88(62-123)
+Sub-Saharan Africa,Lesotho,229(137-358),0.221(0.132-0.345),95(57-148)
+Sub-Saharan Africa,Liberia*,207(141-303),0.113(0.077-0.165),29(20-43)
+Sub-Saharan Africa,Madagascar,"1,116(680-1,706)",0.084(0.051-0.129),28(17-42)
+Sub-Saharan Africa,Malawi*,"1,087(754-1,558)",0.108(0.075-0.155),39(27-55)
+Sub-Saharan Africa,Mali,"1,161(697-1,874)",0.067(0.040-0.107),37(22-60)
+Sub-Saharan Africa,Mauritania,461(287-727),0.052(0.032-0.081),68(43-108)
+Sub-Saharan Africa,Mauritius,"3,445(2,652-4,564)",0.488(0.376-0.647),"2,754(2,120-3,649)"
+Sub-Saharan Africa,Mozambique,"1,927(1,330-2,847)",0.125(0.086-0.185),41(28-60)
+Sub-Saharan Africa,Namibia,462(311-688),0.092(0.062-0.137),142(96-211)
+Sub-Saharan Africa,Niger,"932(605-1,415)",0.063(0.041-0.095),22(14-33)
+Sub-Saharan Africa,Nigeria,"9,853(6,710-14,344)",0.038(0.026-0.055),33(23-48)
+Sub-Saharan Africa,Rwanda,"1,724(1,023-2,721)",0.115(0.068-0.182),96(57-152)
+Sub-Saharan Africa,Sao Tome and Principe*,29(20-42),0.105(0.073-0.150),98(68-140)
+Sub-Saharan Africa,Senegal,"3,014(2,069-4,364)",0.111(0.076-0.161),123(84-178)
+Sub-Saharan Africa,Seychelles*,240(174-327),0.284(0.206-0.388),"2,324(1,685-3,172)"
+Sub-Saharan Africa,Sierra Leone,142(85-224),0.044(0.027-0.070),14(8-21)
+Sub-Saharan Africa,Somalia*,689(478-999),0.114(0.079-0.166),28(19-41)
+Sub-Saharan Africa,South Africa,"24,023(19,224-29,818)",0.141(0.113-0.175),352(281-436)
+Sub-Saharan Africa,South Sudan*,676(464-972),0.110(0.076-0.159),44(30-63)
+Sub-Saharan Africa,Sudan,"4,877(3,403-6,999)",0.108(0.075-0.154),79(55-113)
+Sub-Saharan Africa,Tanzania,"9,611(5,543-15,444)",0.126(0.073-0.202),105(60-168)
+Sub-Saharan Africa,Togo,"797(487-1,258)",0.105(0.064-0.165),68(42-108)
+Sub-Saharan Africa,Uganda,"5,148(3,112-8,102)",0.117(0.071-0.184),77(46-121)
+Sub-Saharan Africa,Zambia,"2,134(1,270-3,389)",0.114(0.068-0.181),76(45-121)
+Sub-Saharan Africa,Zimbabwe,"1,252(802-1,875)",0.098(0.063-0.147),65(42-97)
+Others,Cook Islands*,52(39-70),0.567(0.424-0.760),"2,987(2,235-4,000)"
+Others,Niue*,2(1-3),0.680(0.486-0.922),"1,230(878-1,667)"
+Others,Palestine*,"1,604(1,226-2,114)",0.202(0.155-0.267),230(176-303)
+Others,Tokelau*,1(1-1),0.407(0.281-0.563),652(450-901)
