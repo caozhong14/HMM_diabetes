@@ -62,7 +62,7 @@ For other data, please refre to ./dataPreparation/Readme.md.
 
 ### Step 0. Prepare IHME data
 First, we can download data from the IHME website.
-http://ghdx.healthdata.org/gbd-results-tool, click IHME Data, GBD Results Tool. We have prepared the javascript codes for download IHME data for diabetes. You can also download with codes in bigdata/javascript.level3 if you are familiar with javascript in chrome. We download all 204 countries diabetes mellitus data from 2010-2019.
+http://ghdx.healthdata.org/gbd-results-tool, click IHME Data, GBD Results Tool. We have prepared the javascript codes for download IHME data for diabetes. You can also download with codes in bigdata/javascript.level3 if you are familiar with javascript in chrome. We download all 204 countries diabetes mellitus data from 2010-2021.
 
 Then, we should run the codes in dataPreparation/Mortality_morbidity/IHME.ipynb to deal with the IHME data.
 
@@ -88,7 +88,7 @@ python combine.py
 ```
 
 ### Step 2. Impute data
-We can get 141 countries' data from step 2 due to lacking physical data, saving data, or others. Then we impute the economic burden of all 204 - 141 = 63 countries based on these 141 countries. We need to prepare data of GDP, population data, and 2019 IHME data. IHME data can be downloaded from GBD website. See more details in imputation.py. 
+We can get 141 countries' data from step 2 due to lacking physical data, saving data, or others. Then we impute the economic burden of all 204 - 141 = 63 countries based on these 141 countries. We need to prepare data of GDP, population data, and 2021 IHME data. IHME data can be downloaded from GBD website. See more details in imputation.py. 
 
 You can skip step 2 if generating tables and figures based on the original 141 countries' data.
 
