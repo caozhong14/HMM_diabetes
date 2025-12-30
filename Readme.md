@@ -1,3 +1,29 @@
+Please cite the paper 
+
+Chen, S., Cao, Z., Chen, W. et al. The global macroeconomic burden of diabetes mellitus. Nat Med (2025). https://doi.org/10.1038/s41591-025-04027-5
+
+```
+@article{Chen2025,
+  author  = {Chen, Simiao and
+             Cao, Zhong and
+             Chen, Wenjin and
+             Zhao, Jinghan and
+             Jiao, Lirui and
+             Prettner, Klaus and
+             Kuhn, Michael and
+             Pan, An and
+             Barnighausen, Till Winfried and
+             Bloom, David}
+  title   = {The global macroeconomic burden of diabetes mellitus},
+  journal = {Nature Medicine},
+  year    = {2025},
+  doi     = {10.1038/s41591-025-04027-5},
+  url     = {https://doi.org/10.1038/s41591-025-04027-5},
+  abstract = {Diabetes mellitus poses a substantial and rising global health and economic burden, affecting more than one in ten adults worldwide. Using a health-augmented macroeconomic model across 204 countries and territories, we estimated the economic impact of diabetes from 2020 to 2050, incorporating losses in effective labor supply due to mortality and morbidity, treatment-related resource diversion and informal caregiving costs. Without informal care, the global burden amounts to 10.2 trillion 2017 international dollars (INT\$), equivalent to 0.22\% of annual global gross domestic product. Including informal care, the burden increases dramatically to INT\$78.8 trillion, ranging from INT\$5.5 trillion to INT\$152.1 trillion, depending on the assumptions for care.}
+}
+
+```
+
 ## HMM model for calculating the economic burden of diabetes mellitus
 
 ### Differences from the most researches
